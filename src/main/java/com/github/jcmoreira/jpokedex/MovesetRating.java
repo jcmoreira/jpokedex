@@ -8,8 +8,8 @@ import java.util.Optional;
  */
 public class MovesetRating {
 
-    private String attRank;
-    private String defRank;
+    private final String attRank;
+    private final String defRank;
 
     private MovesetRating(String attRank, String defRank){
         this.attRank = attRank;

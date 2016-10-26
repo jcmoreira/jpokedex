@@ -86,8 +86,8 @@ public enum Family {
     MEWTWO(150),
     MEW(151);
 
-    private int number;
-    private String name;
+    private final int number;
+    private final String name;
 
     Family(int number) {
         this.number = number;

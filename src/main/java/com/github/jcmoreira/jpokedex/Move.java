@@ -147,13 +147,13 @@ public enum Move {
     ROCK_SMASH(241, "Rock Smash", FIGHTING, 7, 15, 1410),;
 
 
-    private int number;
-    private String name;
-    private Type type;
-    private int energy;
-    private int damage;
-    private float duration;
-    private float dps;
+    private final int number;
+    private final String name;
+    private final Type type;
+    private final int energy;
+    private final int damage;
+    private final float duration;
+    private final float dps;
     private static final Map<Integer, Move> BY_NUMBER = new HashMap<>();
 
     Move(int number, String name, Type type, int energy, int damage, int durationInMilliseconds) {
@@ -162,7 +162,7 @@ public enum Move {
         this.type = type;
         this.energy = energy;
         this.damage = damage;
-        this.duration = duration / 1000;
+        this.duration = durationInMilliseconds / 1000;
         this.dps = damage / duration;
     }
 

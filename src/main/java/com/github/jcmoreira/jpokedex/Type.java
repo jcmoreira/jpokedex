@@ -29,8 +29,8 @@ public enum Type {
     DARK(17, "Dark"),
     FAIRY(18, "Fairy");
 
-    private int number;
-    private String name;
+    private final int number;
+    private final String name;
     private Set<Type> weaknesses;
     private Set<Type> strengths;
 

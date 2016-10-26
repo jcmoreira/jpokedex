@@ -7,8 +7,8 @@ import java.util.Objects;
  */
 public class Moveset {
 
-    private Move quickMove;
-    private Move chargeMove;
+    private final Move quickMove;
+    private final Move chargeMove;
 
     private Moveset(Move quickMove, Move chargeMove) {
         this.quickMove = quickMove;

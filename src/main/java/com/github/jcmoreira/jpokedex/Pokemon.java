@@ -762,15 +762,15 @@ public enum Pokemon {
             EnumSet.of(POUND),
             EnumSet.of(BLIZZARD, DRAGON_PULSE, EARTHQUAKE, FIRE_BLAST, HYPER_BEAM, Move.PSYCHIC, SOLAR_BEAM, THUNDER, HURRICANE));
 
-    private static Map<Integer, Pokemon> BY_NUMBER = new HashMap();
-    private int number;
-    private String name;
-    private Set<Type> types;
-    private int baseAttack;
-    private int baseDefense;
-    private int baseStamina;
-    private int maxCp;
-    private Float rating;
+    private static final  Map<Integer, Pokemon> BY_NUMBER = new HashMap();
+    private final int number;
+    private final String name;
+    private final Set<Type> types;
+    private final int baseAttack;
+    private final int baseDefense;
+    private final int baseStamina;
+    private final int maxCp;
+    private final Float rating;
     private Set<Move> quickMoves;
     private Set<Move> chargeMoves;
     private Map<Moveset, MovesetRating> movesetRanks;
