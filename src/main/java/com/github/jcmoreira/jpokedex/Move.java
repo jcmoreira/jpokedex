@@ -144,7 +144,54 @@ public enum Move {
     FEINT_ATTACK(238, "Feint Attack", DARK, 7, 12, 1040),
     STEEL_WING(239, "Steel Wing", STEEL, 4, 15, 1330),
     FIRE_FANG(240, "Fire Fang", FIRE, 4, 10, 840),
-    ROCK_SMASH(241, "Rock Smash", FIGHTING, 7, 15, 1410),;
+    ROCK_SMASH(241, "Rock Smash", FIGHTING, 7, 15, 1410),
+    TRANSFORM(242, "Transform", NORMAL, 0, 0, 0),
+    COUNTER(243, "Counter", FIGHTING, 0, 0, 0),
+    POWDER_SNOW(244, "Powder Snow", ICE, 0, 0, 0),
+    CLOSE_COMBAT(245, "Close Combat", FIGHTING, 0, 0, 0),
+    DYNAMIC_PUNCH(246, "Dynamic Punch", FIGHTING, 0, 0, 0),
+    FOCUS_BLAST(247, "Focus Blast", FIGHTING, 0, 0, 0),
+    AURORA_BEAM(248, "Aurora Beam", ICE, 0, 0, 0),
+    CHARGE_BEAM(249, "Charge Beam", ELECTRIC, 0, 0, 0),
+    VOLT_SWITCH(250, "Volt Switch", ELECTRIC, 0, 0, 0),
+    WILD_CHARGE(251, "Wild Charge", ELECTRIC, 0, 0, 0),
+    ZAP_CANNON(252, "Zap Cannon", ELECTRIC, 0, 0, 0),
+    DRAGON_TAIL(253, "Dragon Tail", DRAGON, 0, 0, 0),
+    AVALANCHE(254, "Avalanche", ICE, 0, 0, 0),
+    AIR_SLASH(255, "Air Slash", FLYING, 0, 0, 0),
+    BRAVE_BIRD(256, "Brave Bird", FLYING, 0, 0, 0),
+    SKY_ATTACK(257, "Sky Attack", FLYING, 0, 0, 0),
+    SAND_TOMB(258, "Sand Tomb", GROUND, 0, 0, 0),
+    ROCK_BLAST(259, "Rock Blast", ROCK, 0, 0, 0),
+    INFESTATION(260, "Infestation", BUG, 0, 0, 0),
+    STRUGGLE_BUG(261, "Struggle Bug", BUG, 0, 0, 0),
+    SILVER_WIND(262, "Silver Wind", BUG, 0, 0, 0),
+    ASTONISH(263, "Astonish", GHOST, 0, 0, 0),
+    HEX(264, "Hex", GHOST, 0, 0, 0),
+    NIGHT_SHADE(265, "Night Shade", GHOST, 0, 0, 0),
+    IRON_TAIL(266, "Iron Tail", STEEL, 0, 0, 0),
+    GYRO_BALL(267, "Gyro Ball", STEEL, 0, 0, 0),
+    HEAVY_SLAM(268, "Heavy Slam", STEEL, 0, 0, 0),
+    FIRE_SPIN(269, "Fire Spin", FIRE, 0, 0, 0),
+    OVERHEAT(270, "Overheat", FIRE, 0, 0, 0),
+    BULLET_SEED(271, "Bullet Seed", GRASS, 0, 0, 0),
+    GRASS_KNOT(272, "Grass Knot", GRASS, 0, 0, 0),
+    ENERGY_BALL(273, "Energy Ball", GRASS, 0, 0, 0),
+    EXTRASENSORY(274, "Extrasensory", Type.PSYCHIC, 0, 0, 0),
+    FUTURE_SIGHT(275, "Future Sight", Type.PSYCHIC, 0, 0, 0),
+    MIRROR_COAT(276, "Mirror Coat", Type.PSYCHIC, 0, 0, 0),
+    OUTRAGE(277, "Outrage", DRAGON, 0, 0, 0),
+    SNARL(278, "Snarl", DARK, 0, 0, 0),
+    CRUNCH(279, "Crunch", DARK, 0, 0, 0),
+    FOUL_PLAY(280, "Foul Play", DARK, 0, 0, 0),
+    HIDDEN_POWER(281, "Hidden Power", NORMAL, 0, 0, 0);
+
+
+
+
+
+
+
 
 
     private final int number;
