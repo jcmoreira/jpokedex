@@ -1302,12 +1302,12 @@ public enum Pokemon {
         IVYSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", null));
         IVYSAUR.movesetRanks = Collections.unmodifiableMap(IVYSAUR.movesetRanks);
 
-        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("B4", "B3"));
-        VENUSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, SLUDGE_BOMB), MovesetRating.of("B3", "C4"));
-        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("B5", "B2"));
-        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("C6", "A1"));
-        VENUSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, PETAL_BLIZZARD), MovesetRating.of("A2", "D5"));
+        VENUSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, SLUDGE_BOMB), MovesetRating.of("B5", "C4"));
         VENUSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", "D6"));
+        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("B6", "A1"));
+        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("B4", "B2"));
+        VENUSAUR.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A2", "B3"));
+        VENUSAUR.movesetRanks.put(Moveset.of(VINE_WHIP, PETAL_BLIZZARD), MovesetRating.of("B3", "D5"));
         VENUSAUR.movesetRanks = Collections.unmodifiableMap(VENUSAUR.movesetRanks);
 
         CHARMANDER.movesetRanks.put(Moveset.of(SCRATCH, FLAMETHROWER), MovesetRating.of("A1", null));
@@ -1318,12 +1318,18 @@ public enum Pokemon {
         CHARMELEON.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of(null, "A1"));
         CHARMELEON.movesetRanks = Collections.unmodifiableMap(CHARMELEON.movesetRanks);
 
-        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, FIRE_BLAST), MovesetRating.of("A1", "B3"));
-        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("D5", "B2"));
-        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, DRAGON_CLAW), MovesetRating.of("F6", "D5"));
-        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("C4", "B4"));
-        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, FLAMETHROWER), MovesetRating.of("B2", "A1"));
-        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, DRAGON_CLAW), MovesetRating.of("B3", "D6"));
+        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, FLAMETHROWER), MovesetRating.of("B7", "D11"));
+        CHARIZARD.movesetRanks.put(Moveset.of(FIRE_SPIN, OVERHEAT), MovesetRating.of("A1", "B5"));
+        CHARIZARD.movesetRanks.put(Moveset.of(FIRE_SPIN, DRAGON_CLAW), MovesetRating.of("C9", "B4"));
+        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, DRAGON_CLAW), MovesetRating.of("C11", "C7"));
+        CHARIZARD.movesetRanks.put(Moveset.of(AIR_SLASH, FIRE_BLAST), MovesetRating.of("B4", "B3"));
+        CHARIZARD.movesetRanks.put(Moveset.of(AIR_SLASH, OVERHEAT), MovesetRating.of("A2", "A1"));
+        CHARIZARD.movesetRanks.put(Moveset.of(FIRE_SPIN, FIRE_BLAST), MovesetRating.of("B3", "C10"));
+        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, DRAGON_CLAW), MovesetRating.of("F12", "C8"));
+        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("B8", "C9"));
+        CHARIZARD.movesetRanks.put(Moveset.of(WING_ATTACK, FIRE_BLAST), MovesetRating.of("B5", "F12"));
+        CHARIZARD.movesetRanks.put(Moveset.of(AIR_SLASH, DRAGON_CLAW), MovesetRating.of("C10", "A2"));
+        CHARIZARD.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B6", "C6"));
         CHARIZARD.movesetRanks = Collections.unmodifiableMap(CHARIZARD.movesetRanks);
 
         SQUIRTLE.movesetRanks.put(Moveset.of(BUBBLE, AQUA_TAIL), MovesetRating.of("A1", "A1"));
@@ -1332,28 +1338,32 @@ public enum Pokemon {
         WARTORTLE.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "A1"));
         WARTORTLE.movesetRanks = Collections.unmodifiableMap(WARTORTLE.movesetRanks);
 
-        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, FLASH_CANNON), MovesetRating.of("C3", "A1"));
-        BLASTOISE.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("B2", "D6"));
-        BLASTOISE.movesetRanks.put(Moveset.of(BITE, FLASH_CANNON), MovesetRating.of("F6", "B2"));
-        BLASTOISE.movesetRanks.put(Moveset.of(BITE, ICE_BEAM), MovesetRating.of("D5", "C5"));
-        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "C4"));
-        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C4", "B3"));
+        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "B2"));
+        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, FLASH_CANNON), MovesetRating.of("C3", "D5"));
+        BLASTOISE.movesetRanks.put(Moveset.of(BITE, ICE_BEAM), MovesetRating.of("D5", "B3"));
+        BLASTOISE.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C4", "A1"));
+        BLASTOISE.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("B2", "C4"));
+        BLASTOISE.movesetRanks.put(Moveset.of(BITE, FLASH_CANNON), MovesetRating.of("F6", "F6"));
         BLASTOISE.movesetRanks = Collections.unmodifiableMap(BLASTOISE.movesetRanks);
 
-        CATERPIE.movesetRanks.put(Moveset.of(TACKLE, STRUGGLE), MovesetRating.of(null, "A1"));
         CATERPIE.movesetRanks.put(Moveset.of(BUG_BITE, STRUGGLE), MovesetRating.of("A1", null));
+        CATERPIE.movesetRanks.put(Moveset.of(TACKLE, STRUGGLE), MovesetRating.of(null, "A1"));
         CATERPIE.movesetRanks = Collections.unmodifiableMap(CATERPIE.movesetRanks);
 
-        METAPOD.movesetRanks.put(Moveset.of(TACKLE, STRUGGLE), MovesetRating.of(null, "A1"));
         METAPOD.movesetRanks.put(Moveset.of(BUG_BITE, STRUGGLE), MovesetRating.of("A1", null));
+        METAPOD.movesetRanks.put(Moveset.of(TACKLE, STRUGGLE), MovesetRating.of(null, "A1"));
         METAPOD.movesetRanks = Collections.unmodifiableMap(METAPOD.movesetRanks);
 
-        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("D5", "C6"));
-        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, SIGNAL_BEAM), MovesetRating.of("D6", "A4"));
-        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, BUG_BUZZ), MovesetRating.of("C4", "A3"));
-        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, SIGNAL_BEAM), MovesetRating.of("B2", "A1"));
-        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, Move.PSYCHIC), MovesetRating.of("B3", "C5"));
-        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, BUG_BUZZ), MovesetRating.of("A1", "A2"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("C7", "C5"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, BUG_BUZZ), MovesetRating.of("A1", "D6"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, SIGNAL_BEAM), MovesetRating.of("A2", "D7"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, SIGNAL_BEAM), MovesetRating.of("B4", "B4"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, Move.PSYCHIC), MovesetRating.of("C9", "F9"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, BUG_BUZZ), MovesetRating.of("B3", null));
+        BUTTERFREE.movesetRanks.put(Moveset.of(BUG_BITE, Move.PSYCHIC), MovesetRating.of("C8", "F8"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, SIGNAL_BEAM), MovesetRating.of("B5", "B3"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(SIGNAL_BEAM, BUG_BUZZ), MovesetRating.of(null, "B2"));
+        BUTTERFREE.movesetRanks.put(Moveset.of(CONFUSION, BUG_BUZZ), MovesetRating.of("B6", "A1"));
         BUTTERFREE.movesetRanks = Collections.unmodifiableMap(BUTTERFREE.movesetRanks);
 
         WEEDLE.movesetRanks.put(Moveset.of(BUG_BITE, STRUGGLE), MovesetRating.of("A1", null));
@@ -1364,12 +1374,15 @@ public enum Pokemon {
         KAKUNA.movesetRanks.put(Moveset.of(POISON_STING, STRUGGLE), MovesetRating.of(null, "A1"));
         KAKUNA.movesetRanks = Collections.unmodifiableMap(KAKUNA.movesetRanks);
 
-        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, X_SCISSOR), MovesetRating.of("B3", "A2"));
-        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
-        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("C5", "F6"));
-        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, AERIAL_ACE), MovesetRating.of("D6", "D5"));
-        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_BOMB), MovesetRating.of("B2", "A3"));
-        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, X_SCISSOR), MovesetRating.of("C4", "B4"));
+        BEEDRILL.movesetRanks.put(Moveset.of(INFESTATION, X_SCISSOR), MovesetRating.of("C5", "B3"));
+        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_BOMB), MovesetRating.of("A2", "B2"));
+        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("C7", "F9"));
+        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, X_SCISSOR), MovesetRating.of("B4", "C6"));
+        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, AERIAL_ACE), MovesetRating.of("D8", "D8"));
+        BEEDRILL.movesetRanks.put(Moveset.of(INFESTATION, AERIAL_ACE), MovesetRating.of("D9", "C7"));
+        BEEDRILL.movesetRanks.put(Moveset.of(BUG_BITE, SLUDGE_BOMB), MovesetRating.of("A1", "C5"));
+        BEEDRILL.movesetRanks.put(Moveset.of(POISON_JAB, X_SCISSOR), MovesetRating.of("C6", "B4"));
+        BEEDRILL.movesetRanks.put(Moveset.of(INFESTATION, SLUDGE_BOMB), MovesetRating.of("B3", "A1"));
         BEEDRILL.movesetRanks = Collections.unmodifiableMap(BEEDRILL.movesetRanks);
 
         PIDGEY.movesetRanks.put(Moveset.of(TACKLE, AERIAL_ACE), MovesetRating.of("A1", "A1"));
@@ -1379,72 +1392,82 @@ public enum Pokemon {
         PIDGEOTTO.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("A1", null));
         PIDGEOTTO.movesetRanks = Collections.unmodifiableMap(PIDGEOTTO.movesetRanks);
 
-        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, HURRICANE), MovesetRating.of("A1", "B6"));
-        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, HURRICANE), MovesetRating.of("C2", "B4"));
-        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, AIR_CUTTER), MovesetRating.of("C3", "B5"));
-        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("F5", "A1"));
-        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, AIR_CUTTER), MovesetRating.of("F6", "B3"));
-        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("C4", "B2"));
+        PIDGEOT.movesetRanks.put(Moveset.of(AIR_SLASH, HURRICANE), MovesetRating.of("A1", "B3"));
+        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, HURRICANE), MovesetRating.of("A2", "D9"));
+        PIDGEOT.movesetRanks.put(Moveset.of(AIR_SLASH, BRAVE_BIRD), MovesetRating.of("B6", "B2"));
+        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("B4", "D8"));
+        PIDGEOT.movesetRanks.put(Moveset.of(AIR_SLASH, AERIAL_ACE), MovesetRating.of("B5", "A1"));
+        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, HURRICANE), MovesetRating.of("B3", "B6"));
+        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, BRAVE_BIRD), MovesetRating.of("C7", "C7"));
+        PIDGEOT.movesetRanks.put(Moveset.of(WING_ATTACK, AIR_CUTTER), MovesetRating.of("C8", "D10"));
+        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("C9", "B4"));
+        PIDGEOT.movesetRanks.put(Moveset.of(STEEL_WING, AIR_CUTTER), MovesetRating.of("D10", "C5"));
         PIDGEOT.movesetRanks = Collections.unmodifiableMap(PIDGEOT.movesetRanks);
 
-        RATTATA.movesetRanks.put(Moveset.of(TACKLE, HYPER_FANG), MovesetRating.of(null, "A1"));
         RATTATA.movesetRanks.put(Moveset.of(TACKLE, BODY_SLAM), MovesetRating.of("A1", null));
+        RATTATA.movesetRanks.put(Moveset.of(TACKLE, HYPER_FANG), MovesetRating.of(null, "A1"));
         RATTATA.movesetRanks = Collections.unmodifiableMap(RATTATA.movesetRanks);
 
-        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_BEAM), MovesetRating.of("B3", "B5"));
-        RATICATE.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("D5", "B2"));
-        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_FANG), MovesetRating.of("C4", "B6"));
-        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, DIG), MovesetRating.of("F6", "B4"));
-        RATICATE.movesetRanks.put(Moveset.of(BITE, HYPER_BEAM), MovesetRating.of("A1", "B3"));
-        RATICATE.movesetRanks.put(Moveset.of(BITE, HYPER_FANG), MovesetRating.of("B2", "A1"));
+        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_FANG), MovesetRating.of("A2", "A1"));
+        RATICATE.movesetRanks.put(Moveset.of(BITE, HYPER_FANG), MovesetRating.of("B4", "D4"));
+        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, DIG), MovesetRating.of("C5", "B2"));
+        RATICATE.movesetRanks.put(Moveset.of(BITE, HYPER_BEAM), MovesetRating.of("B3", "F6"));
+        RATICATE.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_BEAM), MovesetRating.of("A1", "B3"));
+        RATICATE.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("D6", "D5"));
         RATICATE.movesetRanks = Collections.unmodifiableMap(RATICATE.movesetRanks);
 
-        SPEAROW.movesetRanks.put(Moveset.of(QUICK_ATTACK, DRILL_PECK), MovesetRating.of(null, "A1"));
         SPEAROW.movesetRanks.put(Moveset.of(PECK, DRILL_PECK), MovesetRating.of("A1", null));
+        SPEAROW.movesetRanks.put(Moveset.of(QUICK_ATTACK, DRILL_PECK), MovesetRating.of(null, "A1"));
         SPEAROW.movesetRanks = Collections.unmodifiableMap(SPEAROW.movesetRanks);
 
-        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, DRILL_RUN), MovesetRating.of("A1", "A2"));
-        FEAROW.movesetRanks.put(Moveset.of(PECK, DRILL_RUN), MovesetRating.of("A2", "A4"));
-        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, TWISTER), MovesetRating.of("B6", "C6"));
-        FEAROW.movesetRanks.put(Moveset.of(PECK, AERIAL_ACE), MovesetRating.of("B3", "A3"));
-        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("B5", "A1"));
-        FEAROW.movesetRanks.put(Moveset.of(PECK, TWISTER), MovesetRating.of("B4", "C5"));
+        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, TWISTER), MovesetRating.of("C7", "D8"));
+        FEAROW.movesetRanks.put(Moveset.of(PECK, TWISTER), MovesetRating.of("C8", "C6"));
+        FEAROW.movesetRanks.put(Moveset.of(PECK, SKY_ATTACK), MovesetRating.of("A1", "A2"));
+        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, DRILL_RUN), MovesetRating.of("B5", "C7"));
+        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, SKY_ATTACK), MovesetRating.of("B3", "B5"));
+        FEAROW.movesetRanks.put(Moveset.of(PECK, DRILL_RUN), MovesetRating.of("B6", "B3"));
+        FEAROW.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("B4", "B4"));
+        FEAROW.movesetRanks.put(Moveset.of(PECK, AERIAL_ACE), MovesetRating.of("B2", "A1"));
         FEAROW.movesetRanks = Collections.unmodifiableMap(FEAROW.movesetRanks);
 
         EKANS.movesetRanks.put(Moveset.of(ACID, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
         EKANS.movesetRanks.put(Moveset.of(POISON_STING, SLUDGE_BOMB), MovesetRating.of("A1", null));
         EKANS.movesetRanks = Collections.unmodifiableMap(EKANS.movesetRanks);
 
-        ARBOK.movesetRanks.put(Moveset.of(ACID, GUNK_SHOT), MovesetRating.of("B3", "B4"));
-        ARBOK.movesetRanks.put(Moveset.of(BITE, DARK_PULSE), MovesetRating.of("C5", "A2"));
-        ARBOK.movesetRanks.put(Moveset.of(BITE, SLUDGE_WAVE), MovesetRating.of("A1", "C5"));
+        ARBOK.movesetRanks.put(Moveset.of(BITE, SLUDGE_WAVE), MovesetRating.of("B5", "D6"));
+        ARBOK.movesetRanks.put(Moveset.of(ACID, DARK_PULSE), MovesetRating.of(null, "A1"));
         ARBOK.movesetRanks.put(Moveset.of(ACID, SLUDGE_WAVE), MovesetRating.of("B4", "B3"));
-        ARBOK.movesetRanks.put(Moveset.of(ACID, DARK_PULSE), MovesetRating.of("D6", "A1"));
-        ARBOK.movesetRanks.put(Moveset.of(BITE, GUNK_SHOT), MovesetRating.of("A2", "C6"));
+        ARBOK.movesetRanks.put(Moveset.of(BITE, GUNK_SHOT), MovesetRating.of("A2", "D5"));
+        ARBOK.movesetRanks.put(Moveset.of(ACID, GUNK_SHOT), MovesetRating.of("A1", "A2"));
+        ARBOK.movesetRanks.put(Moveset.of(BITE, DARK_PULSE), MovesetRating.of("C6", "C4"));
         ARBOK.movesetRanks = Collections.unmodifiableMap(ARBOK.movesetRanks);
 
         PIKACHU.movesetRanks.put(Moveset.of(QUICK_ATTACK, THUNDERBOLT), MovesetRating.of(null, "A1"));
         PIKACHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("A1", null));
         PIKACHU.movesetRanks = Collections.unmodifiableMap(PIKACHU.movesetRanks);
 
-        RAICHU.movesetRanks.put(Moveset.of(SPARK, BRICK_BREAK), MovesetRating.of("D5", "C3"));
-        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER_PUNCH), MovesetRating.of("B4", "A2"));
-        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("A2", "C6"));
-        RAICHU.movesetRanks.put(Moveset.of(SPARK, THUNDER), MovesetRating.of("A1", "C4"));
-        RAICHU.movesetRanks.put(Moveset.of(SPARK, THUNDER_PUNCH), MovesetRating.of("B3", "A1"));
-        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, BRICK_BREAK), MovesetRating.of("D6", "C5"));
+        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER_PUNCH), MovesetRating.of("B7", "C9"));
+        RAICHU.movesetRanks.put(Moveset.of(VOLT_SWITCH, WILD_CHARGE), MovesetRating.of("A2", "A2"));
+        RAICHU.movesetRanks.put(Moveset.of(SPARK, THUNDER), MovesetRating.of("B3", "C7"));
+        RAICHU.movesetRanks.put(Moveset.of(SPARK, WILD_CHARGE), MovesetRating.of("A1", "B5"));
+        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, BRICK_BREAK), MovesetRating.of("C9", "C8"));
+        RAICHU.movesetRanks.put(Moveset.of(VOLT_SWITCH, THUNDER_PUNCH), MovesetRating.of("B5", "A1"));
+        RAICHU.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("B4", "C10"));
+        RAICHU.movesetRanks.put(Moveset.of(SPARK, BRICK_BREAK), MovesetRating.of("C8", "B6"));
+        RAICHU.movesetRanks.put(Moveset.of(SPARK, THUNDER_PUNCH), MovesetRating.of("B6", "B4"));
+        RAICHU.movesetRanks.put(Moveset.of(VOLT_SWITCH, BRICK_BREAK), MovesetRating.of("C10", "B3"));
         RAICHU.movesetRanks = Collections.unmodifiableMap(RAICHU.movesetRanks);
 
         SANDSHREW.movesetRanks.put(Moveset.of(MUD_SHOT, DIG), MovesetRating.of(null, "A1"));
         SANDSHREW.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_SLIDE), MovesetRating.of("A1", null));
         SANDSHREW.movesetRanks = Collections.unmodifiableMap(SANDSHREW.movesetRanks);
 
-        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, ROCK_TOMB), MovesetRating.of("D6", "F5"));
-        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, EARTHQUAKE), MovesetRating.of("B2", "C4"));
-        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, BULLDOZE), MovesetRating.of("C3", "B2"));
-        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("A1", "C3"));
-        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_TOMB), MovesetRating.of("C4", "F6"));
-        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, BULLDOZE), MovesetRating.of("D5", "A1"));
+        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, ROCK_TOMB), MovesetRating.of("D6", "B2"));
+        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("A1", "C5"));
+        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, BULLDOZE), MovesetRating.of("B4", "A1"));
+        SANDSLASH.movesetRanks.put(Moveset.of(METAL_CLAW, EARTHQUAKE), MovesetRating.of("B3", "B3"));
+        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_TOMB), MovesetRating.of("C5", "C6"));
+        SANDSLASH.movesetRanks.put(Moveset.of(MUD_SHOT, BULLDOZE), MovesetRating.of("A2", "B4"));
         SANDSLASH.movesetRanks = Collections.unmodifiableMap(SANDSLASH.movesetRanks);
 
         NIDORAN_FEMALE.movesetRanks.put(Moveset.of(POISON_STING, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
@@ -1453,12 +1476,12 @@ public enum Pokemon {
         NIDORINA.movesetRanks.put(Moveset.of(POISON_STING, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         NIDORINA.movesetRanks = Collections.unmodifiableMap(NIDORINA.movesetRanks);
 
+        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, STONE_EDGE), MovesetRating.of("D6", "D6"));
+        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, SLUDGE_WAVE), MovesetRating.of("C5", "D5"));
         NIDOQUEEN.movesetRanks.put(Moveset.of(POISON_JAB, EARTHQUAKE), MovesetRating.of("A1", "A1"));
-        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, STONE_EDGE), MovesetRating.of("B6", "C6"));
-        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, SLUDGE_WAVE), MovesetRating.of("B5", "C5"));
-        NIDOQUEEN.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("B3", "B2"));
         NIDOQUEEN.movesetRanks.put(Moveset.of(POISON_JAB, STONE_EDGE), MovesetRating.of("B4", "B3"));
-        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, EARTHQUAKE), MovesetRating.of("A2", "B4"));
+        NIDOQUEEN.movesetRanks.put(Moveset.of(BITE, EARTHQUAKE), MovesetRating.of("B3", "C4"));
+        NIDOQUEEN.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("A2", "B2"));
         NIDOQUEEN.movesetRanks = Collections.unmodifiableMap(NIDOQUEEN.movesetRanks);
 
         NIDORAN_MALE.movesetRanks.put(Moveset.of(PECK, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
@@ -1468,59 +1491,70 @@ public enum Pokemon {
         NIDORINO.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         NIDORINO.movesetRanks = Collections.unmodifiableMap(NIDORINO.movesetRanks);
 
-        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, EARTHQUAKE), MovesetRating.of("B4", "D4"));
-        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, EARTHQUAKE), MovesetRating.of("A1", "A1"));
-        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, MEGAHORN), MovesetRating.of("B3", "C3"));
-        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, MEGAHORN), MovesetRating.of("D6", "F5"));
-        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("B2", "C2"));
-        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, SLUDGE_WAVE), MovesetRating.of("D5", "F6"));
+        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, MEGAHORN), MovesetRating.of("D9", "F9"));
+        NIDOKING.movesetRanks.put(Moveset.of(IRON_TAIL, MEGAHORN), MovesetRating.of("C7", "B5"));
+        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, MEGAHORN), MovesetRating.of("B3", "C6"));
+        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, EARTHQUAKE), MovesetRating.of("A1", "B3"));
+        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, SLUDGE_WAVE), MovesetRating.of("C8", "D7"));
+        NIDOKING.movesetRanks.put(Moveset.of(FURY_CUTTER, EARTHQUAKE), MovesetRating.of("C6", "D8"));
+        NIDOKING.movesetRanks.put(Moveset.of(IRON_TAIL, EARTHQUAKE), MovesetRating.of("B4", "A1"));
+        NIDOKING.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("A2", "B4"));
+        NIDOKING.movesetRanks.put(Moveset.of(IRON_TAIL, SLUDGE_WAVE), MovesetRating.of("B5", "A2"));
         NIDOKING.movesetRanks = Collections.unmodifiableMap(NIDOKING.movesetRanks);
 
         CLEFAIRY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, MOONBLAST), MovesetRating.of(null, "A1"));
         CLEFAIRY.movesetRanks.put(Moveset.of(POUND, MOONBLAST), MovesetRating.of("A1", null));
         CLEFAIRY.movesetRanks = Collections.unmodifiableMap(CLEFAIRY.movesetRanks);
 
-        CLEFABLE.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("D4", "A2"));
-        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("D5", "C5"));
-        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, MOONBLAST), MovesetRating.of("C3", "C4"));
-        CLEFABLE.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("C2", "C3"));
-        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("F6", "A1"));
-        CLEFABLE.movesetRanks.put(Moveset.of(POUND, MOONBLAST), MovesetRating.of("A1", "D6"));
+        CLEFABLE.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("C7", "D8"));
+        CLEFABLE.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("A1", "C6"));
+        CLEFABLE.movesetRanks.put(Moveset.of(CHARGE_BEAM, MOONBLAST), MovesetRating.of("B6", "B5"));
+        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, MOONBLAST), MovesetRating.of("B5", "B2"));
+        CLEFABLE.movesetRanks.put(Moveset.of(CHARGE_BEAM, Move.PSYCHIC), MovesetRating.of("D9", "C7"));
+        CLEFABLE.movesetRanks.put(Moveset.of(CHARGE_BEAM, DAZZLING_GLEAM), MovesetRating.of("B3", "B4"));
+        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("A2", "A1"));
+        CLEFABLE.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("C8", "B3"));
+        CLEFABLE.movesetRanks.put(Moveset.of(POUND, MOONBLAST), MovesetRating.of("B4", "D9"));
         CLEFABLE.movesetRanks = Collections.unmodifiableMap(CLEFABLE.movesetRanks);
 
         VULPIX.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A1", "A1"));
         VULPIX.movesetRanks = Collections.unmodifiableMap(VULPIX.movesetRanks);
 
-        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, HEAT_WAVE), MovesetRating.of("B6", "D6"));
-        NINETALES.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("B3", "B2"));
-        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, FIRE_BLAST), MovesetRating.of("A2", "C4"));
-        NINETALES.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A1", "C3"));
-        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, FLAMETHROWER), MovesetRating.of("B5", "A1"));
-        NINETALES.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("B4", "D5"));
+        NINETALES.movesetRanks.put(Moveset.of(FIRE_SPIN, SOLAR_BEAM), MovesetRating.of("C6", "A2"));
+        NINETALES.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("D10", "B7"));
+        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, FLAMETHROWER), MovesetRating.of("C7", "A4"));
+        NINETALES.movesetRanks.put(Moveset.of(FIRE_SPIN, HEAT_WAVE), MovesetRating.of("B3", "B5"));
+        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, HEAT_WAVE), MovesetRating.of("D11", "F11"));
+        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, SOLAR_BEAM), MovesetRating.of("D9", "C8"));
+        NINETALES.movesetRanks.put(Moveset.of(FIRE_SPIN, OVERHEAT), MovesetRating.of("A1", "A1"));
+        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, OVERHEAT), MovesetRating.of("B4", "C9"));
+        NINETALES.movesetRanks.put(Moveset.of(FEINT_ATTACK, FIRE_BLAST), MovesetRating.of("C8", "C10"));
+        NINETALES.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B2", "B6"));
+        NINETALES.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("B5", "A3"));
         NINETALES.movesetRanks = Collections.unmodifiableMap(NINETALES.movesetRanks);
 
-        JIGGLYPUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, DAZZLING_GLEAM), MovesetRating.of(null, "A1"));
         JIGGLYPUFF.movesetRanks.put(Moveset.of(POUND, BODY_SLAM), MovesetRating.of("A1", null));
+        JIGGLYPUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, DAZZLING_GLEAM), MovesetRating.of(null, "A1"));
         JIGGLYPUFF.movesetRanks = Collections.unmodifiableMap(JIGGLYPUFF.movesetRanks);
 
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, PLAY_ROUGH), MovesetRating.of("D5", "A2"));
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, HYPER_BEAM), MovesetRating.of("A1", "B3"));
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, PLAY_ROUGH), MovesetRating.of("A2", "A1"));
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("C4", "C5"));
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, DAZZLING_GLEAM), MovesetRating.of("D6", "B4"));
-        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, HYPER_BEAM), MovesetRating.of("C3", "C6"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, HYPER_BEAM), MovesetRating.of("B6", "B5"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("A2", "A4"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, PLAY_ROUGH), MovesetRating.of("A1", "A3"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(POUND, HYPER_BEAM), MovesetRating.of("A3", "B6"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, DAZZLING_GLEAM), MovesetRating.of("B5", "A2"));
+        WIGGLYTUFF.movesetRanks.put(Moveset.of(FEINT_ATTACK, PLAY_ROUGH), MovesetRating.of("B4", "A1"));
         WIGGLYTUFF.movesetRanks = Collections.unmodifiableMap(WIGGLYTUFF.movesetRanks);
 
-        ZUBAT.movesetRanks.put(Moveset.of(QUICK_ATTACK, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
         ZUBAT.movesetRanks.put(Moveset.of(BITE, SLUDGE_BOMB), MovesetRating.of("A1", null));
+        ZUBAT.movesetRanks.put(Moveset.of(QUICK_ATTACK, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
         ZUBAT.movesetRanks = Collections.unmodifiableMap(ZUBAT.movesetRanks);
 
-        GOLBAT.movesetRanks.put(Moveset.of(BITE, AIR_CUTTER), MovesetRating.of("C4", "C4"));
-        GOLBAT.movesetRanks.put(Moveset.of(BITE, OMINOUS_WIND), MovesetRating.of("C6", "F5"));
         GOLBAT.movesetRanks.put(Moveset.of(WING_ATTACK, OMINOUS_WIND), MovesetRating.of("A3", "F6"));
+        GOLBAT.movesetRanks.put(Moveset.of(BITE, OMINOUS_WIND), MovesetRating.of("C6", "F5"));
+        GOLBAT.movesetRanks.put(Moveset.of(BITE, POISON_FANG), MovesetRating.of("C5", "A2"));
         GOLBAT.movesetRanks.put(Moveset.of(WING_ATTACK, POISON_FANG), MovesetRating.of("A1", "A1"));
         GOLBAT.movesetRanks.put(Moveset.of(WING_ATTACK, AIR_CUTTER), MovesetRating.of("A2", "C3"));
-        GOLBAT.movesetRanks.put(Moveset.of(BITE, POISON_FANG), MovesetRating.of("C5", "A2"));
+        GOLBAT.movesetRanks.put(Moveset.of(BITE, AIR_CUTTER), MovesetRating.of("C4", "C4"));
         GOLBAT.movesetRanks = Collections.unmodifiableMap(GOLBAT.movesetRanks);
 
         ODDISH.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
@@ -1529,93 +1563,114 @@ public enum Pokemon {
         GLOOM.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("A1", "A1"));
         GLOOM.movesetRanks = Collections.unmodifiableMap(GLOOM.movesetRanks);
 
-        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "B3"));
-        VILEPLUME.movesetRanks.put(Moveset.of(ACID, PETAL_BLIZZARD), MovesetRating.of("B4", "B2"));
-        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, MOONBLAST), MovesetRating.of("C5", "D5"));
-        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("A2", "A1"));
-        VILEPLUME.movesetRanks.put(Moveset.of(ACID, MOONBLAST), MovesetRating.of("C6", "F6"));
-        VILEPLUME.movesetRanks.put(Moveset.of(ACID, SOLAR_BEAM), MovesetRating.of("B3", "B4"));
+        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, MOONBLAST), MovesetRating.of("C5", "B4"));
+        VILEPLUME.movesetRanks.put(Moveset.of(ACID, SOLAR_BEAM), MovesetRating.of("B3", "B2"));
+        VILEPLUME.movesetRanks.put(Moveset.of(ACID, MOONBLAST), MovesetRating.of("C6", "D6"));
+        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("A2", "B3"));
+        VILEPLUME.movesetRanks.put(Moveset.of(ACID, PETAL_BLIZZARD), MovesetRating.of("B4", "C5"));
+        VILEPLUME.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "A1"));
         VILEPLUME.movesetRanks = Collections.unmodifiableMap(VILEPLUME.movesetRanks);
 
         PARAS.movesetRanks.put(Moveset.of(BUG_BITE, SEED_BOMB), MovesetRating.of("A1", "A1"));
         PARAS.movesetRanks = Collections.unmodifiableMap(PARAS.movesetRanks);
 
-        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, X_SCISSOR), MovesetRating.of("B3", "A3"));
-        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, SOLAR_BEAM), MovesetRating.of("A1", "A1"));
-        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("D5", "A5"));
-        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, CROSS_POISON), MovesetRating.of("F6", "A4"));
-        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, SOLAR_BEAM), MovesetRating.of("B2", "B6"));
-        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, CROSS_POISON), MovesetRating.of("D4", "A2"));
+        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, SOLAR_BEAM), MovesetRating.of("A2", "D6"));
+        PARASECT.movesetRanks.put(Moveset.of(STRUGGLE_BUG, SOLAR_BEAM), MovesetRating.of("B3", "B3"));
+        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, SOLAR_BEAM), MovesetRating.of("A1", "F8"));
+        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("C5", "F9"));
+        PARASECT.movesetRanks.put(Moveset.of(STRUGGLE_BUG, X_SCISSOR), MovesetRating.of("C6", "A1"));
+        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, CROSS_POISON), MovesetRating.of("D7", "C5"));
+        PARASECT.movesetRanks.put(Moveset.of(BUG_BITE, X_SCISSOR), MovesetRating.of("C4", "C4"));
+        PARASECT.movesetRanks.put(Moveset.of(FURY_CUTTER, CROSS_POISON), MovesetRating.of("D9", "F7"));
+        PARASECT.movesetRanks.put(Moveset.of(STRUGGLE_BUG, CROSS_POISON), MovesetRating.of("D8", "A2"));
         PARASECT.movesetRanks = Collections.unmodifiableMap(PARASECT.movesetRanks);
 
         VENONAT.movesetRanks.put(Moveset.of(CONFUSION, SIGNAL_BEAM), MovesetRating.of(null, "A1"));
         VENONAT.movesetRanks.put(Moveset.of(BUG_BITE, SIGNAL_BEAM), MovesetRating.of("A1", null));
         VENONAT.movesetRanks = Collections.unmodifiableMap(VENONAT.movesetRanks);
 
-        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("D5", "C5"));
-        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, POISON_FANG), MovesetRating.of("F6", "B3"));
-        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, POISON_FANG), MovesetRating.of("C3", "C4"));
-        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, BUG_BUZZ), MovesetRating.of("C4", "A1"));
-        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, BUG_BUZZ), MovesetRating.of("A1", "B2"));
-        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, Move.PSYCHIC), MovesetRating.of("B2", "D6"));
+        VENOMOTH.movesetRanks.put(Moveset.of(INFESTATION, BUG_BUZZ), MovesetRating.of("A2", "B6"));
+        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B5", "B4"));
+        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, POISON_FANG), MovesetRating.of("B7", "D8"));
+        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, BUG_BUZZ), MovesetRating.of("A1", "D9"));
+        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, BUG_BUZZ), MovesetRating.of("B3", "B2"));
+        VENOMOTH.movesetRanks.put(Moveset.of(INFESTATION, SILVER_WIND), MovesetRating.of("B6", "B5"));
+        VENOMOTH.movesetRanks.put(Moveset.of(BUG_BITE, Move.PSYCHIC), MovesetRating.of("B4", "F10"));
+        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, POISON_FANG), MovesetRating.of("D10", "B3"));
+        VENOMOTH.movesetRanks.put(Moveset.of(INFESTATION, Move.PSYCHIC), MovesetRating.of("C9", "C7"));
+        VENOMOTH.movesetRanks.put(Moveset.of(CONFUSION, SILVER_WIND), MovesetRating.of("C8", "A1"));
         VENOMOTH.movesetRanks = Collections.unmodifiableMap(VENOMOTH.movesetRanks);
 
         DIGLETT.movesetRanks.put(Moveset.of(MUD_SLAP, DIG), MovesetRating.of("A1", "A1"));
         DIGLETT.movesetRanks = Collections.unmodifiableMap(DIGLETT.movesetRanks);
 
-        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("B3", "B4"));
-        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, STONE_EDGE), MovesetRating.of("B4", "F6"));
-        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "A3"));
-        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, EARTHQUAKE), MovesetRating.of("A2", "B5"));
-        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, MUD_BOMB), MovesetRating.of("C6", "A2"));
-        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, MUD_BOMB), MovesetRating.of("C5", "A1"));
+        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, STONE_EDGE), MovesetRating.of("B7", "C6"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A2", "B2"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("A4", "D8"));
+        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, MUD_BOMB), MovesetRating.of("B6", "C4"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("B9", "B3"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SLAP, MUD_BOMB), MovesetRating.of("A1", "A1"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SHOT, MUD_BOMB), MovesetRating.of("A3", "D7"));
+        DUGTRIO.movesetRanks.put(Moveset.of(MUD_SHOT, STONE_EDGE), MovesetRating.of("B8", "D9"));
+        DUGTRIO.movesetRanks.put(Moveset.of(SUCKER_PUNCH, EARTHQUAKE), MovesetRating.of("B5", "C5"));
         DUGTRIO.movesetRanks = Collections.unmodifiableMap(DUGTRIO.movesetRanks);
 
         MEOWTH.movesetRanks.put(Moveset.of(SCRATCH, BODY_SLAM), MovesetRating.of("A1", "A1"));
         MEOWTH.movesetRanks = Collections.unmodifiableMap(MEOWTH.movesetRanks);
 
-        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, PLAY_ROUGH), MovesetRating.of("C4", "A1"));
-        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, NIGHT_SLASH), MovesetRating.of("A2", "A4"));
-        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, PLAY_ROUGH), MovesetRating.of("A1", "A5"));
-        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, NIGHT_SLASH), MovesetRating.of("D5", "A2"));
-        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, POWER_GEM), MovesetRating.of("D6", "A3"));
-        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, POWER_GEM), MovesetRating.of("A3", "A6"));
+        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, POWER_GEM), MovesetRating.of("A3", "B5"));
+        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, POWER_GEM), MovesetRating.of("B7", "A2"));
+        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, PLAY_ROUGH), MovesetRating.of("A2", "B4"));
+        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, NIGHT_SLASH), MovesetRating.of("B6", "C7"));
+        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, NIGHT_SLASH), MovesetRating.of("C8", "B6"));
+        PERSIAN.movesetRanks.put(Moveset.of(SCRATCH, FOUL_PLAY), MovesetRating.of("A1", "C8"));
+        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, PLAY_ROUGH), MovesetRating.of("B5", "A1"));
+        PERSIAN.movesetRanks.put(Moveset.of(FEINT_ATTACK, FOUL_PLAY), MovesetRating.of("B4", "B3"));
         PERSIAN.movesetRanks = Collections.unmodifiableMap(PERSIAN.movesetRanks);
 
-        PSYDUCK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, AQUA_TAIL), MovesetRating.of(null, "A1"));
         PSYDUCK.movesetRanks.put(Moveset.of(WATER_GUN, AQUA_TAIL), MovesetRating.of("A1", null));
+        PSYDUCK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, AQUA_TAIL), MovesetRating.of(null, "A1"));
         PSYDUCK.movesetRanks = Collections.unmodifiableMap(PSYDUCK.movesetRanks);
 
-        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("F6", "A2"));
-        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("C2", "B5"));
-        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "C6"));
-        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("D3", "B4"));
-        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, ICE_BEAM), MovesetRating.of("F5", "A1"));
-        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, HYDRO_PUMP), MovesetRating.of("F4", "B3"));
+        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "D5"));
+        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, HYDRO_PUMP), MovesetRating.of("C2", "A1"));
+        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("F6", "B3"));
+        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C3", "C4"));
+        GOLDUCK.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("C4", "D6"));
+        GOLDUCK.movesetRanks.put(Moveset.of(CONFUSION, ICE_BEAM), MovesetRating.of("D5", "A2"));
         GOLDUCK.movesetRanks = Collections.unmodifiableMap(GOLDUCK.movesetRanks);
 
         MANKEY.movesetRanks.put(Moveset.of(SCRATCH, LOW_SWEEP), MovesetRating.of(null, "A1"));
         MANKEY.movesetRanks.put(Moveset.of(SCRATCH, CROSS_CHOP), MovesetRating.of("A1", null));
         MANKEY.movesetRanks = Collections.unmodifiableMap(MANKEY.movesetRanks);
 
-        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, CROSS_CHOP), MovesetRating.of("B2", "F5"));
-        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, NIGHT_SLASH), MovesetRating.of("F6", "C3"));
-        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, LOW_SWEEP), MovesetRating.of("C4", "A2"));
-        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, NIGHT_SLASH), MovesetRating.of("F5", "C4"));
-        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, CROSS_CHOP), MovesetRating.of("A1", "F6"));
-        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, LOW_SWEEP), MovesetRating.of("C3", "A1"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, LOW_SWEEP), MovesetRating.of("C9", "C8"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, NIGHT_SLASH), MovesetRating.of("C7", "B5"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, LOW_SWEEP), MovesetRating.of("C10", "B6"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, NIGHT_SLASH), MovesetRating.of("C8", "C7"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(COUNTER, NIGHT_SLASH), MovesetRating.of("C6", "A1"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "B3"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(KARATE_CHOP, CROSS_CHOP), MovesetRating.of("B5", "B4"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, CLOSE_COMBAT), MovesetRating.of("B2", "C10"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(COUNTER, LOW_SWEEP), MovesetRating.of("B3", "A2"));
+        PRIMEAPE.movesetRanks.put(Moveset.of(LOW_KICK, CROSS_CHOP), MovesetRating.of("B4", "C9"));
         PRIMEAPE.movesetRanks = Collections.unmodifiableMap(PRIMEAPE.movesetRanks);
 
         GROWLITHE.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of(null, "A1"));
         GROWLITHE.movesetRanks.put(Moveset.of(BITE, FLAMETHROWER), MovesetRating.of("A1", null));
         GROWLITHE.movesetRanks = Collections.unmodifiableMap(GROWLITHE.movesetRanks);
 
-        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, BULLDOZE), MovesetRating.of("C5", "C5"));
-        ARCANINE.movesetRanks.put(Moveset.of(BITE, FLAMETHROWER), MovesetRating.of("B4", "B3"));
-        ARCANINE.movesetRanks.put(Moveset.of(BITE, FIRE_BLAST), MovesetRating.of("A2", "C4"));
-        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, FIRE_BLAST), MovesetRating.of("A1", "B2"));
-        ARCANINE.movesetRanks.put(Moveset.of(BITE, BULLDOZE), MovesetRating.of("F6", "D6"));
-        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, FLAMETHROWER), MovesetRating.of("B3", "A1"));
+        ARCANINE.movesetRanks.put(Moveset.of(BITE, BULLDOZE), MovesetRating.of("D11", "D10"));
+        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, FLAMETHROWER), MovesetRating.of("A2", "B3"));
+        ARCANINE.movesetRanks.put(Moveset.of(BITE, FIRE_BLAST), MovesetRating.of("B7", "D11"));
+        ARCANINE.movesetRanks.put(Moveset.of(SNARL, WILD_CHARGE), MovesetRating.of("B6", "A1"));
+        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, CRUNCH), MovesetRating.of("B8", "B6"));
+        ARCANINE.movesetRanks.put(Moveset.of(SNARL, FIRE_BLAST), MovesetRating.of("B5", "B7"));
+        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, FIRE_BLAST), MovesetRating.of("A1", "B4"));
+        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, BULLDOZE), MovesetRating.of("C9", "B5"));
+        ARCANINE.movesetRanks.put(Moveset.of(FIRE_FANG, WILD_CHARGE), MovesetRating.of("B3", "A2"));
+        ARCANINE.movesetRanks.put(Moveset.of(SNARL, CRUNCH), MovesetRating.of("C10", "B8"));
+        ARCANINE.movesetRanks.put(Moveset.of(BITE, FLAMETHROWER), MovesetRating.of("B4", "C9"));
         ARCANINE.movesetRanks = Collections.unmodifiableMap(ARCANINE.movesetRanks);
 
         POLIWAG.movesetRanks.put(Moveset.of(BUBBLE, BODY_SLAM), MovesetRating.of("A1", "A1"));
@@ -1624,12 +1679,16 @@ public enum Pokemon {
         POLIWHIRL.movesetRanks.put(Moveset.of(BUBBLE, SCALD), MovesetRating.of("A1", "A1"));
         POLIWHIRL.movesetRanks = Collections.unmodifiableMap(POLIWHIRL.movesetRanks);
 
-        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, SUBMISSION), MovesetRating.of("C3", "A3"));
-        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("A2", "F4"));
-        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, ICE_PUNCH), MovesetRating.of("F6", "F5"));
-        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, SUBMISSION), MovesetRating.of("C4", "F6"));
-        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A1", "A2"));
-        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, ICE_PUNCH), MovesetRating.of("D5", "A1"));
+        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, SUBMISSION), MovesetRating.of("C9", "F9"));
+        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("B5", "F10"));
+        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, ICE_PUNCH), MovesetRating.of("C7", "A2"));
+        POLIWRATH.movesetRanks.put(Moveset.of(ROCK_SMASH, ICE_PUNCH), MovesetRating.of("C8", "A1"));
+        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, DYNAMIC_PUNCH), MovesetRating.of("A1", "A3"));
+        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A3", "B7"));
+        POLIWRATH.movesetRanks.put(Moveset.of(BUBBLE, SUBMISSION), MovesetRating.of("C6", "B5"));
+        POLIWRATH.movesetRanks.put(Moveset.of(MUD_SHOT, ICE_PUNCH), MovesetRating.of("D10", "F8"));
+        POLIWRATH.movesetRanks.put(Moveset.of(ROCK_SMASH, HYDRO_PUMP), MovesetRating.of("B4", "B6"));
+        POLIWRATH.movesetRanks.put(Moveset.of(ROCK_SMASH, DYNAMIC_PUNCH), MovesetRating.of("A2", "B4"));
         POLIWRATH.movesetRanks = Collections.unmodifiableMap(POLIWRATH.movesetRanks);
 
         ABRA.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYSHOCK), MovesetRating.of("A1", "A1"));
@@ -1639,28 +1698,38 @@ public enum Pokemon {
         KADABRA.movesetRanks.put(Moveset.of(PSYCHO_CUT, SHADOW_BALL), MovesetRating.of("A1", null));
         KADABRA.movesetRanks = Collections.unmodifiableMap(KADABRA.movesetRanks);
 
-        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B2", "A1"));
-        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, SHADOW_BALL), MovesetRating.of("B4", "C6"));
-        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, DAZZLING_GLEAM), MovesetRating.of("B3", "C5"));
-        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, DAZZLING_GLEAM), MovesetRating.of("D6", "B4"));
-        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, Move.PSYCHIC), MovesetRating.of("A1", "B2"));
-        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("D5", "B3"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, DAZZLING_GLEAM), MovesetRating.of("C7", "D7"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, FUTURE_SIGHT), MovesetRating.of("A2", "B3"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, FOCUS_BLAST), MovesetRating.of("C8", "F9"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, SHADOW_BALL), MovesetRating.of("B4", "D6"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, Move.PSYCHIC), MovesetRating.of("B3", "F10"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, FOCUS_BLAST), MovesetRating.of("C10", "B4"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, DAZZLING_GLEAM), MovesetRating.of("C9", "A2"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(PSYCHO_CUT, FUTURE_SIGHT), MovesetRating.of("A1", "F8"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B5", "B5"));
+        ALAKAZAM.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("B6", "A1"));
         ALAKAZAM.movesetRanks = Collections.unmodifiableMap(ALAKAZAM.movesetRanks);
 
-        MACHOP.movesetRanks.put(Moveset.of(LOW_KICK, CROSS_CHOP), MovesetRating.of("A1", null));
         MACHOP.movesetRanks.put(Moveset.of(KARATE_CHOP, LOW_SWEEP), MovesetRating.of(null, "A1"));
+        MACHOP.movesetRanks.put(Moveset.of(LOW_KICK, CROSS_CHOP), MovesetRating.of("A1", null));
         MACHOP.movesetRanks = Collections.unmodifiableMap(MACHOP.movesetRanks);
 
         MACHOKE.movesetRanks.put(Moveset.of(KARATE_CHOP, BRICK_BREAK), MovesetRating.of(null, "A1"));
         MACHOKE.movesetRanks.put(Moveset.of(LOW_KICK, CROSS_CHOP), MovesetRating.of("A1", null));
         MACHOKE.movesetRanks = Collections.unmodifiableMap(MACHOKE.movesetRanks);
 
-        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, SUBMISSION), MovesetRating.of("C3", "B2"));
-        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, CROSS_CHOP), MovesetRating.of("A1", "D5"));
-        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, STONE_EDGE), MovesetRating.of("D5", "D4"));
-        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, CROSS_CHOP), MovesetRating.of("C4", "D3"));
-        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, SUBMISSION), MovesetRating.of("D6", "A1"));
-        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, STONE_EDGE), MovesetRating.of("B2", "D6"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, HEAVY_SLAM), MovesetRating.of("D11", "D10"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, STONE_EDGE), MovesetRating.of("F12", "D12"));
+        MACHAMP.movesetRanks.put(Moveset.of(COUNTER, HEAVY_SLAM), MovesetRating.of("C6", "B2"));
+        MACHAMP.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("B2", "B4"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, CLOSE_COMBAT), MovesetRating.of("D8", "D11"));
+        MACHAMP.movesetRanks.put(Moveset.of(COUNTER, DYNAMIC_PUNCH), MovesetRating.of("A1", "A1"));
+        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, CROSS_CHOP), MovesetRating.of("C4", "C5"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, DYNAMIC_PUNCH), MovesetRating.of("B3", "B3"));
+        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, SUBMISSION), MovesetRating.of("C5", "C6"));
+        MACHAMP.movesetRanks.put(Moveset.of(KARATE_CHOP, STONE_EDGE), MovesetRating.of("D7", "D9"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, SUBMISSION), MovesetRating.of("D9", "C7"));
+        MACHAMP.movesetRanks.put(Moveset.of(BULLET_PUNCH, CROSS_CHOP), MovesetRating.of("D10", "D8"));
         MACHAMP.movesetRanks = Collections.unmodifiableMap(MACHAMP.movesetRanks);
 
         BELLSPROUT.movesetRanks.put(Moveset.of(ACID, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
@@ -1670,23 +1739,23 @@ public enum Pokemon {
         WEEPINBELL.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         WEEPINBELL.movesetRanks = Collections.unmodifiableMap(WEEPINBELL.movesetRanks);
 
-        VICTREEBEL.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "B2"));
         VICTREEBEL.movesetRanks.put(Moveset.of(ACID, SLUDGE_BOMB), MovesetRating.of("B4", "C4"));
         VICTREEBEL.movesetRanks.put(Moveset.of(ACID, LEAF_BLADE), MovesetRating.of("B6", "C6"));
+        VICTREEBEL.movesetRanks.put(Moveset.of(ACID, SOLAR_BEAM), MovesetRating.of("B5", "C5"));
         VICTREEBEL.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("B3", "A1"));
         VICTREEBEL.movesetRanks.put(Moveset.of(RAZOR_LEAF, LEAF_BLADE), MovesetRating.of("A2", "B3"));
-        VICTREEBEL.movesetRanks.put(Moveset.of(ACID, SOLAR_BEAM), MovesetRating.of("B5", "C5"));
+        VICTREEBEL.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "B2"));
         VICTREEBEL.movesetRanks = Collections.unmodifiableMap(VICTREEBEL.movesetRanks);
 
         TENTACOOL.movesetRanks.put(Moveset.of(BUBBLE, WATER_PULSE), MovesetRating.of("A1", "A1"));
         TENTACOOL.movesetRanks = Collections.unmodifiableMap(TENTACOOL.movesetRanks);
 
-        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, HYDRO_PUMP), MovesetRating.of("C3", "B3"));
-        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, SLUDGE_WAVE), MovesetRating.of("D6", "C6"));
-        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, HYDRO_PUMP), MovesetRating.of("A1", "A1"));
-        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("C4", "B4"));
-        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, BLIZZARD), MovesetRating.of("B2", "A2"));
-        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, BLIZZARD), MovesetRating.of("C5", "B5"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, BLIZZARD), MovesetRating.of("C6", "B3"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, SLUDGE_WAVE), MovesetRating.of("B4", "C6"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(ACID, HYDRO_PUMP), MovesetRating.of("A2", "B4"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, BLIZZARD), MovesetRating.of("C5", "A1"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("B3", "B5"));
+        TENTACRUEL.movesetRanks.put(Moveset.of(POISON_JAB, HYDRO_PUMP), MovesetRating.of("A1", "A2"));
         TENTACRUEL.movesetRanks = Collections.unmodifiableMap(TENTACRUEL.movesetRanks);
 
         GEODUDE.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("A1", null));
@@ -1697,377 +1766,456 @@ public enum Pokemon {
         GRAVELER.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("A1", null));
         GRAVELER.movesetRanks = Collections.unmodifiableMap(GRAVELER.movesetRanks);
 
-        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, EARTHQUAKE), MovesetRating.of("B3", "A3"));
-        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("A2", "A4"));
-        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, ANCIENT_POWER), MovesetRating.of("F6", "A5"));
-        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "A1"));
-        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("B4", "B6"));
-        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, ANCIENT_POWER), MovesetRating.of("D5", "A2"));
+        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_BLAST), MovesetRating.of("B6", "B6"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SHOT, STONE_EDGE), MovesetRating.of("B3", "F10"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("B9", "B4"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, ROCK_BLAST), MovesetRating.of("B8", "A2"));
+        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, EARTHQUAKE), MovesetRating.of("A2", "C8"));
+        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, ANCIENT_POWER), MovesetRating.of("B5", "B5"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SHOT, ANCIENT_POWER), MovesetRating.of("C11", "D9"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, ANCIENT_POWER), MovesetRating.of("C10", "A1"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("B7", "A3"));
+        GOLEM.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A1", "C7"));
+        GOLEM.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("B4", "F11"));
         GOLEM.movesetRanks = Collections.unmodifiableMap(GOLEM.movesetRanks);
 
         PONYTA.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A1", "A1"));
         PONYTA.movesetRanks = Collections.unmodifiableMap(PONYTA.movesetRanks);
 
-        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, DRILL_RUN), MovesetRating.of("D5", "A1"));
-        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, DRILL_RUN), MovesetRating.of("F6", "B3"));
-        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A1", "B2"));
-        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("B2", "C4"));
-        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, HEAT_WAVE), MovesetRating.of("C4", "F6"));
-        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, FIRE_BLAST), MovesetRating.of("B3", "D5"));
+        RAPIDASH.movesetRanks.put(Moveset.of(FIRE_SPIN, FIRE_BLAST), MovesetRating.of("A1", "B2"));
+        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, FIRE_BLAST), MovesetRating.of("C6", "D8"));
+        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, DRILL_RUN), MovesetRating.of("C7", "B4"));
+        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, DRILL_RUN), MovesetRating.of("F9", "C7"));
+        RAPIDASH.movesetRanks.put(Moveset.of(FIRE_SPIN, HEAT_WAVE), MovesetRating.of("B3", "B3"));
+        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("C5", "C6"));
+        RAPIDASH.movesetRanks.put(Moveset.of(FIRE_SPIN, DRILL_RUN), MovesetRating.of("C4", "A1"));
+        RAPIDASH.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B2", "C5"));
+        RAPIDASH.movesetRanks.put(Moveset.of(LOW_KICK, HEAT_WAVE), MovesetRating.of("D8", "D9"));
         RAPIDASH.movesetRanks = Collections.unmodifiableMap(RAPIDASH.movesetRanks);
 
         SLOWPOKE.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of(null, "A1"));
         SLOWPOKE.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("A1", null));
         SLOWPOKE.movesetRanks = Collections.unmodifiableMap(SLOWPOKE.movesetRanks);
 
-        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("C4", "A1"));
-        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, WATER_PULSE), MovesetRating.of("F6", "B2"));
-        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("A1", "C5"));
-        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("C2", "C4"));
-        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C3", "D6"));
-        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, ICE_BEAM), MovesetRating.of("D5", "B3"));
+        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, ICE_BEAM), MovesetRating.of("B5", "A1"));
+        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("A1", "A2"));
+        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("B4", "C5"));
+        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C6", "C4"));
+        SLOWBRO.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("A2", "C6"));
+        SLOWBRO.movesetRanks.put(Moveset.of(CONFUSION, WATER_PULSE), MovesetRating.of("B3", "A3"));
         SLOWBRO.movesetRanks = Collections.unmodifiableMap(SLOWBRO.movesetRanks);
 
         MAGNEMITE.movesetRanks.put(Moveset.of(SPARK, THUNDERBOLT), MovesetRating.of("A1", "A1"));
         MAGNEMITE.movesetRanks = Collections.unmodifiableMap(MAGNEMITE.movesetRanks);
 
-        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, MAGNET_BOMB), MovesetRating.of("D6", "D6"));
-        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, DISCHARGE), MovesetRating.of("B5", "D5"));
-        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, FLASH_CANNON), MovesetRating.of("A3", "A2"));
-        MAGNETON.movesetRanks.put(Moveset.of(SPARK, FLASH_CANNON), MovesetRating.of("A1", "A1"));
-        MAGNETON.movesetRanks.put(Moveset.of(SPARK, DISCHARGE), MovesetRating.of("A2", "D3"));
-        MAGNETON.movesetRanks.put(Moveset.of(SPARK, MAGNET_BOMB), MovesetRating.of("B4", "D4"));
+        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, DISCHARGE), MovesetRating.of("A1", "C9"));
+        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, MAGNET_BOMB), MovesetRating.of("B6", "B3"));
+        MAGNETON.movesetRanks.put(Moveset.of(SPARK, MAGNET_BOMB), MovesetRating.of("B5", "B2"));
+        MAGNETON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, FLASH_CANNON), MovesetRating.of("C8", "D10"));
+        MAGNETON.movesetRanks.put(Moveset.of(SPARK, DISCHARGE), MovesetRating.of("A2", "B5"));
+        MAGNETON.movesetRanks.put(Moveset.of(CHARGE_BEAM, MAGNET_BOMB), MovesetRating.of("B7", "A1"));
+        MAGNETON.movesetRanks.put(Moveset.of(SPARK, FLASH_CANNON), MovesetRating.of("C9", "C7"));
+        MAGNETON.movesetRanks.put(Moveset.of(CHARGE_BEAM, ZAP_CANNON), MovesetRating.of("B4", "B6"));
+        MAGNETON.movesetRanks.put(Moveset.of(SPARK, ZAP_CANNON), MovesetRating.of("B3", "C8"));
+        MAGNETON.movesetRanks.put(Moveset.of(CHARGE_BEAM, FLASH_CANNON), MovesetRating.of("C10", "B4"));
         MAGNETON.movesetRanks = Collections.unmodifiableMap(MAGNETON.movesetRanks);
 
-        FARFETCHD.movesetRanks.put(Moveset.of(FURY_CUTTER, LEAF_BLADE), MovesetRating.of("B2", "B3"));
-        FARFETCHD.movesetRanks.put(Moveset.of(CUT, AERIAL_ACE), MovesetRating.of("B4", "A1"));
-        FARFETCHD.movesetRanks.put(Moveset.of(CUT, LEAF_BLADE), MovesetRating.of("A1", "B5"));
-        FARFETCHD.movesetRanks.put(Moveset.of(FURY_CUTTER, AERIAL_ACE), MovesetRating.of("F5", "B2"));
         FARFETCHD.movesetRanks.put(Moveset.of(FURY_CUTTER, AIR_CUTTER), MovesetRating.of("F6", "C6"));
+        FARFETCHD.movesetRanks.put(Moveset.of(CUT, AERIAL_ACE), MovesetRating.of("B4", "A1"));
+        FARFETCHD.movesetRanks.put(Moveset.of(FURY_CUTTER, AERIAL_ACE), MovesetRating.of("F5", "B2"));
         FARFETCHD.movesetRanks.put(Moveset.of(CUT, AIR_CUTTER), MovesetRating.of("B3", "B4"));
+        FARFETCHD.movesetRanks.put(Moveset.of(CUT, LEAF_BLADE), MovesetRating.of("A1", "B5"));
+        FARFETCHD.movesetRanks.put(Moveset.of(FURY_CUTTER, LEAF_BLADE), MovesetRating.of("B2", "B3"));
         FARFETCHD.movesetRanks = Collections.unmodifiableMap(FARFETCHD.movesetRanks);
 
-        DODUO.movesetRanks.put(Moveset.of(QUICK_ATTACK, DRILL_PECK), MovesetRating.of(null, "A1"));
         DODUO.movesetRanks.put(Moveset.of(PECK, DRILL_PECK), MovesetRating.of("A1", null));
+        DODUO.movesetRanks.put(Moveset.of(QUICK_ATTACK, DRILL_PECK), MovesetRating.of(null, "A1"));
         DODUO.movesetRanks = Collections.unmodifiableMap(DODUO.movesetRanks);
 
-        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, DRILL_PECK), MovesetRating.of("A2", "A1"));
-        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, DRILL_PECK), MovesetRating.of("A1", "A2"));
-        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, AERIAL_ACE), MovesetRating.of("C3", "B3"));
-        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, AIR_CUTTER), MovesetRating.of("C4", "B6"));
-        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("C6", "B4"));
-        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, AIR_CUTTER), MovesetRating.of("C5", "B5"));
+        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, BRAVE_BIRD), MovesetRating.of("B6", "F8"));
+        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, BRAVE_BIRD), MovesetRating.of("B5", "D7"));
+        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, DRILL_PECK), MovesetRating.of("B2", "C4"));
+        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, AIR_CUTTER), MovesetRating.of("F8", "C6"));
+        DODRIO.movesetRanks.put(Moveset.of(FEINT_ATTACK, AERIAL_ACE), MovesetRating.of("B4", "C5"));
+        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, AIR_CUTTER), MovesetRating.of("D7", "B3"));
+        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("B3", "B2"));
+        DODRIO.movesetRanks.put(Moveset.of(STEEL_WING, DRILL_PECK), MovesetRating.of("A1", "A1"));
         DODRIO.movesetRanks = Collections.unmodifiableMap(DODRIO.movesetRanks);
 
         SEEL.movesetRanks.put(Moveset.of(LICK, AQUA_TAIL), MovesetRating.of("A1", null));
         SEEL.movesetRanks.put(Moveset.of(ICE_SHARD, AQUA_TAIL), MovesetRating.of(null, "A1"));
         SEEL.movesetRanks = Collections.unmodifiableMap(SEEL.movesetRanks);
 
-        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", "C4"));
-        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, ICY_WIND), MovesetRating.of("D4", "F5"));
-        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, AQUA_JET), MovesetRating.of("D5", "A2"));
-        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, ICY_WIND), MovesetRating.of("D6", "F6"));
-        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, AQUA_JET), MovesetRating.of("D3", "B3"));
-        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("B2", "A1"));
+        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, AURORA_BEAM), MovesetRating.of("B3", "C8"));
+        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, ICY_WIND), MovesetRating.of("B4", "C7"));
+        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, ICY_WIND), MovesetRating.of("C9", "A1"));
+        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, AQUA_JET), MovesetRating.of("D11", "B3"));
+        DEWGONG.movesetRanks.put(Moveset.of(IRON_TAIL, AURORA_BEAM), MovesetRating.of("B6", "A2"));
+        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, WATER_PULSE), MovesetRating.of("C7", "D11"));
+        DEWGONG.movesetRanks.put(Moveset.of(IRON_TAIL, BLIZZARD), MovesetRating.of("B2", "B6"));
+        DEWGONG.movesetRanks.put(Moveset.of(IRON_TAIL, WATER_PULSE), MovesetRating.of("C8", "B4"));
+        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, AQUA_JET), MovesetRating.of("C10", "D9"));
+        DEWGONG.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("B5", "B5"));
+        DEWGONG.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", "D10"));
         DEWGONG.movesetRanks = Collections.unmodifiableMap(DEWGONG.movesetRanks);
 
         GRIMER.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         GRIMER.movesetRanks = Collections.unmodifiableMap(GRIMER.movesetRanks);
 
-        MUK.movesetRanks.put(Moveset.of(LICK, GUNK_SHOT), MovesetRating.of("B3", null));
-        MUK.movesetRanks.put(Moveset.of(LICK, SLUDGE_WAVE), MovesetRating.of("B4", null));
-        MUK.movesetRanks.put(Moveset.of(LICK, DARK_PULSE), MovesetRating.of("D6", null));
-        MUK.movesetRanks.put(Moveset.of(POISON_JAB, GUNK_SHOT), MovesetRating.of("A1", null));
-        MUK.movesetRanks.put(Moveset.of(POISON_JAB, DARK_PULSE), MovesetRating.of("C5", null));
-        MUK.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("A2", null));
+        MUK.movesetRanks.put(Moveset.of(LICK, SLUDGE_WAVE), MovesetRating.of("C9", "F12"));
+        MUK.movesetRanks.put(Moveset.of(ACID, SLUDGE_WAVE), MovesetRating.of("B4", "C9"));
+        MUK.movesetRanks.put(Moveset.of(INFESTATION, SLUDGE_WAVE), MovesetRating.of("D11", "B5"));
+        MUK.movesetRanks.put(Moveset.of(ACID, GUNK_SHOT), MovesetRating.of("A2", "B3"));
+        MUK.movesetRanks.put(Moveset.of(INFESTATION, GUNK_SHOT), MovesetRating.of("C7", "A2"));
+        MUK.movesetRanks.put(Moveset.of(LICK, DARK_PULSE), MovesetRating.of("C10", "D10"));
+        MUK.movesetRanks.put(Moveset.of(LICK, GUNK_SHOT), MovesetRating.of("B5", "D11"));
+        MUK.movesetRanks.put(Moveset.of(INFESTATION, DARK_PULSE), MovesetRating.of("D12", "B6"));
+        MUK.movesetRanks.put(Moveset.of(ACID, DARK_PULSE), MovesetRating.of("C6", "C8"));
+        MUK.movesetRanks.put(Moveset.of(POISON_JAB, GUNK_SHOT), MovesetRating.of("A1", "A1"));
+        MUK.movesetRanks.put(Moveset.of(POISON_JAB, DARK_PULSE), MovesetRating.of("C8", "B7"));
+        MUK.movesetRanks.put(Moveset.of(POISON_JAB, SLUDGE_WAVE), MovesetRating.of("B3", "B4"));
         MUK.movesetRanks = Collections.unmodifiableMap(MUK.movesetRanks);
 
-        SHELLDER.movesetRanks.put(Moveset.of(ICE_SHARD, WATER_PULSE), MovesetRating.of(null, "A1"));
         SHELLDER.movesetRanks.put(Moveset.of(TACKLE, WATER_PULSE), MovesetRating.of("A1", null));
+        SHELLDER.movesetRanks.put(Moveset.of(ICE_SHARD, WATER_PULSE), MovesetRating.of(null, "A1"));
         SHELLDER.movesetRanks = Collections.unmodifiableMap(SHELLDER.movesetRanks);
 
-        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", "D10"));
-        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, ICY_WIND), MovesetRating.of("C5", "B4"));
-        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of(null, "A1"));
-        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, HYDRO_PUMP), MovesetRating.of("B4", "C7"));
-        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, ICY_WIND), MovesetRating.of("C6", "B3"));
-        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, HYDRO_PUMP), MovesetRating.of("B3", "D9"));
-        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, AURORA_BEAM), MovesetRating.of(null, "B5"));
-        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, AURORA_BEAM), MovesetRating.of(null, "C6"));
-        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, AVALANCHE), MovesetRating.of(null, "B2"));
-        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("A2", "D8"));
+        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, AURORA_BEAM), MovesetRating.of("C7", "C6"));
+        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, HYDRO_PUMP), MovesetRating.of("B6", "C7"));
+        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, HYDRO_PUMP), MovesetRating.of("B5", "D9"));
+        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, ICY_WIND), MovesetRating.of("D9", "B4"));
+        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, AURORA_BEAM), MovesetRating.of("C8", "B5"));
+        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of("A2", "A1"));
+        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, AVALANCHE), MovesetRating.of("A1", "B2"));
+        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, ICY_WIND), MovesetRating.of("D10", "B3"));
+        CLOYSTER.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("B4", "D8"));
+        CLOYSTER.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("B3", "D10"));
         CLOYSTER.movesetRanks = Collections.unmodifiableMap(CLOYSTER.movesetRanks);
 
-        GASTLY.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
         GASTLY.movesetRanks.put(Moveset.of(LICK, SLUDGE_BOMB), MovesetRating.of("A1", null));
+        GASTLY.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SLUDGE_BOMB), MovesetRating.of(null, "A1"));
         GASTLY.movesetRanks = Collections.unmodifiableMap(GASTLY.movesetRanks);
 
         HAUNTER.movesetRanks.put(Moveset.of(SHADOW_CLAW, SLUDGE_BOMB), MovesetRating.of("A1", null));
         HAUNTER.movesetRanks.put(Moveset.of(SHADOW_CLAW, SHADOW_BALL), MovesetRating.of(null, "A1"));
         HAUNTER.movesetRanks = Collections.unmodifiableMap(HAUNTER.movesetRanks);
 
-        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, DARK_PULSE), MovesetRating.of("C5", "D6"));
-        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, SHADOW_BALL), MovesetRating.of("C3", "A1"));
-        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SLUDGE_BOMB), MovesetRating.of("B2", "C4"));
-        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SHADOW_BALL), MovesetRating.of("C4", "B2"));
-        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, SLUDGE_BOMB), MovesetRating.of("A1", "B3"));
-        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, DARK_PULSE), MovesetRating.of("F6", "D5"));
+        GENGAR.movesetRanks.put(Moveset.of(HEX, SLUDGE_BOMB), MovesetRating.of("B5", "A2"));
+        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, SHADOW_BALL), MovesetRating.of("A1", "B4"));
+        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, DARK_PULSE), MovesetRating.of("F11", "D12"));
+        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SLUDGE_WAVE), MovesetRating.of("C9", "C10"));
+        GENGAR.movesetRanks.put(Moveset.of(HEX, SHADOW_BALL), MovesetRating.of("B2", "B6"));
+        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, FOCUS_BLAST), MovesetRating.of("F12", "D11"));
+        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, DARK_PULSE), MovesetRating.of("C8", "B5"));
+        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, SLUDGE_BOMB), MovesetRating.of("B3", "A1"));
+        GENGAR.movesetRanks.put(Moveset.of(SHADOW_CLAW, SLUDGE_WAVE), MovesetRating.of("B6", "B3"));
+        GENGAR.movesetRanks.put(Moveset.of(HEX, FOCUS_BLAST), MovesetRating.of("D10", "C7"));
+        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SLUDGE_BOMB), MovesetRating.of("B7", "C8"));
+        GENGAR.movesetRanks.put(Moveset.of(SUCKER_PUNCH, SHADOW_BALL), MovesetRating.of("B4", "C9"));
         GENGAR.movesetRanks = Collections.unmodifiableMap(GENGAR.movesetRanks);
 
-        ONIX.movesetRanks.put(Moveset.of(TACKLE, STONE_EDGE), MovesetRating.of("A2", "D5"));
-        ONIX.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A4", "C3"));
         ONIX.movesetRanks.put(Moveset.of(ROCK_THROW, IRON_HEAD), MovesetRating.of("C6", "D6"));
-        ONIX.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("A3", "A1"));
         ONIX.movesetRanks.put(Moveset.of(TACKLE, ROCK_SLIDE), MovesetRating.of("A1", "A2"));
+        ONIX.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("A3", "A1"));
         ONIX.movesetRanks.put(Moveset.of(TACKLE, IRON_HEAD), MovesetRating.of("C5", "D4"));
+        ONIX.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A4", "C3"));
+        ONIX.movesetRanks.put(Moveset.of(TACKLE, STONE_EDGE), MovesetRating.of("A2", "D5"));
         ONIX.movesetRanks = Collections.unmodifiableMap(ONIX.movesetRanks);
 
         DROWZEE.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("A1", null));
         DROWZEE.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of(null, "A1"));
         DROWZEE.movesetRanks = Collections.unmodifiableMap(DROWZEE.movesetRanks);
 
-        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B2", "C5"));
-        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("A1", "F10"));
-        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, PSYSHOCK), MovesetRating.of("C4", "A1"));
-        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SHADOW_BALL), MovesetRating.of("C5", "C7"));
-        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, FUTURE_SIGHT), MovesetRating.of(null, "A3"));
-        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("F6", "A2"));
-        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, FOCUS_BLAST), MovesetRating.of(null, "B4"));
-        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, FOCUS_BLAST), MovesetRating.of(null, "F8"));
-        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYSHOCK), MovesetRating.of("B3", "C6"));
-        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, FUTURE_SIGHT), MovesetRating.of(null, "F9"));
+        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYSHOCK), MovesetRating.of("C9", "C6"));
+        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, FUTURE_SIGHT), MovesetRating.of("A1", "A3"));
+        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B6", "C5"));
+        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, FOCUS_BLAST), MovesetRating.of("C7", "B4"));
+        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, FUTURE_SIGHT), MovesetRating.of("B2", "F9"));
+        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SHADOW_BALL), MovesetRating.of("B4", "C7"));
+        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("C8", "F10"));
+        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, PSYSHOCK), MovesetRating.of("B3", "A1"));
+        HYPNO.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, FOCUS_BLAST), MovesetRating.of("D10", "F8"));
+        HYPNO.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("B5", "A2"));
         HYPNO.movesetRanks = Collections.unmodifiableMap(HYPNO.movesetRanks);
 
         KRABBY.movesetRanks.put(Moveset.of(BUBBLE, WATER_PULSE), MovesetRating.of("A1", "A1"));
         KRABBY.movesetRanks = Collections.unmodifiableMap(KRABBY.movesetRanks);
 
-        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, WATER_PULSE), MovesetRating.of("A3", "A1"));
-        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, X_SCISSOR), MovesetRating.of("A1", "D6"));
-        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, VICE_GRIP), MovesetRating.of("A2", "C3"));
-        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("D5", "A2"));
-        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, VICE_GRIP), MovesetRating.of("D6", "C4"));
-        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, X_SCISSOR), MovesetRating.of("A4", "D5"));
+        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("B2", "C7"));
+        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, WATER_PULSE), MovesetRating.of("B3", "B5"));
+        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, X_SCISSOR), MovesetRating.of("C6", "C8"));
+        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, VICE_GRIP), MovesetRating.of("D8", "C6"));
+        KINGLER.movesetRanks.put(Moveset.of(METAL_CLAW, X_SCISSOR), MovesetRating.of("C5", "B4"));
+        KINGLER.movesetRanks.put(Moveset.of(BUBBLE, VICE_GRIP), MovesetRating.of("D7", "B3"));
+        KINGLER.movesetRanks.put(Moveset.of(BUBBLE, WATER_PULSE), MovesetRating.of("A1", "A2"));
+        KINGLER.movesetRanks.put(Moveset.of(BUBBLE, X_SCISSOR), MovesetRating.of("C4", "A1"));
+        KINGLER.movesetRanks.put(Moveset.of(MUD_SHOT, VICE_GRIP), MovesetRating.of("F9", "D9"));
         KINGLER.movesetRanks = Collections.unmodifiableMap(KINGLER.movesetRanks);
 
         VOLTORB.movesetRanks.put(Moveset.of(TACKLE, THUNDERBOLT), MovesetRating.of(null, "A1"));
         VOLTORB.movesetRanks.put(Moveset.of(SPARK, THUNDERBOLT), MovesetRating.of("A1", null));
         VOLTORB.movesetRanks = Collections.unmodifiableMap(VOLTORB.movesetRanks);
 
-        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, HYPER_BEAM), MovesetRating.of("C5", "C5"));
-        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, DISCHARGE), MovesetRating.of("C4", "B4"));
-        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, HYPER_BEAM), MovesetRating.of("B3", "C6"));
-        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, THUNDERBOLT), MovesetRating.of("B2", "A1"));
-        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, THUNDERBOLT), MovesetRating.of("A1", "B2"));
-        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, DISCHARGE), MovesetRating.of("D6", "B3"));
+        ELECTRODE.movesetRanks.put(Moveset.of(VOLT_SWITCH, THUNDERBOLT), MovesetRating.of("B4", "A2"));
+        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, THUNDERBOLT), MovesetRating.of("B3", "D7"));
+        ELECTRODE.movesetRanks.put(Moveset.of(VOLT_SWITCH, DISCHARGE), MovesetRating.of("B5", "A1"));
+        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, HYPER_BEAM), MovesetRating.of("C7", "D8"));
+        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, DISCHARGE), MovesetRating.of("C6", "D6"));
+        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, DISCHARGE), MovesetRating.of("B2", "B3"));
+        ELECTRODE.movesetRanks.put(Moveset.of(TACKLE, HYPER_BEAM), MovesetRating.of("D9", "F9"));
+        ELECTRODE.movesetRanks.put(Moveset.of(SPARK, THUNDERBOLT), MovesetRating.of("A1", "B4"));
+        ELECTRODE.movesetRanks.put(Moveset.of(VOLT_SWITCH, HYPER_BEAM), MovesetRating.of("C8", "C5"));
         ELECTRODE.movesetRanks = Collections.unmodifiableMap(ELECTRODE.movesetRanks);
 
         EXEGGCUTE.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("A1", "A1"));
         EXEGGCUTE.movesetRanks = Collections.unmodifiableMap(EXEGGCUTE.movesetRanks);
 
-        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SOLAR_BEAM), MovesetRating.of("A1", "B6"));
-        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("B2", "B4"));
-        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, SEED_BOMB), MovesetRating.of("D6", "A3"));
-        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("C5", "A1"));
-        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SEED_BOMB), MovesetRating.of("C4", "B5"));
-        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, SOLAR_BEAM), MovesetRating.of("B3", "A2"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, SEED_BOMB), MovesetRating.of("B5", "A1"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(EXTRASENSORY, SEED_BOMB), MovesetRating.of("B10", "B4"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("B8", "B7"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SOLAR_BEAM), MovesetRating.of("A2", "B5"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, SOLAR_BEAM), MovesetRating.of("A3", "A2"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SEED_BOMB), MovesetRating.of("B11", "B9"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B6", "A3"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(BULLET_SEED, SOLAR_BEAM), MovesetRating.of("B4", "D12"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(BULLET_SEED, SEED_BOMB), MovesetRating.of("B9", "C10"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(EXTRASENSORY, SOLAR_BEAM), MovesetRating.of("A1", "B8"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(EXTRASENSORY, Move.PSYCHIC), MovesetRating.of("B7", "B6"));
+        EXEGGUTOR.movesetRanks.put(Moveset.of(BULLET_SEED, Move.PSYCHIC), MovesetRating.of("C12", "D11"));
         EXEGGUTOR.movesetRanks = Collections.unmodifiableMap(EXEGGUTOR.movesetRanks);
 
         CUBONE.movesetRanks.put(Moveset.of(MUD_SLAP, DIG), MovesetRating.of(null, "A1"));
         CUBONE.movesetRanks.put(Moveset.of(MUD_SLAP, BONE_CLUB), MovesetRating.of("A1", null));
         CUBONE.movesetRanks = Collections.unmodifiableMap(CUBONE.movesetRanks);
 
-        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, DIG), MovesetRating.of("F6", "A2"));
-        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, EARTHQUAKE), MovesetRating.of("B3", "C6"));
-        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "B4"));
-        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, BONE_CLUB), MovesetRating.of("C5", "B5"));
-        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, DIG), MovesetRating.of("C4", "A1"));
-        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, BONE_CLUB), MovesetRating.of("B2", "B3"));
+        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, DIG), MovesetRating.of("B3", "B2"));
+        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, DIG), MovesetRating.of("C6", "C5"));
+        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "B3"));
+        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, EARTHQUAKE), MovesetRating.of("B4", "C6"));
+        MAROWAK.movesetRanks.put(Moveset.of(MUD_SLAP, BONE_CLUB), MovesetRating.of("B2", "A1"));
+        MAROWAK.movesetRanks.put(Moveset.of(ROCK_SMASH, BONE_CLUB), MovesetRating.of("C5", "B4"));
         MAROWAK.movesetRanks = Collections.unmodifiableMap(MAROWAK.movesetRanks);
 
-        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("A3", "C5"));
-        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("A1", "A1"));
-        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, BRICK_BREAK), MovesetRating.of("A4", "C4"));
-        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, STONE_EDGE), MovesetRating.of("B6", "F6"));
-        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, LOW_SWEEP), MovesetRating.of("A2", "B2"));
-        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, LOW_SWEEP), MovesetRating.of("B5", "B3"));
+        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, LOW_SWEEP), MovesetRating.of("C8", "A2"));
+        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, STOMP), MovesetRating.of("C10", "A3"));
+        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, STOMP), MovesetRating.of("C9", "C8"));
+        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, CLOSE_COMBAT), MovesetRating.of("A1", "D9"));
+        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, LOW_SWEEP), MovesetRating.of("C7", "C7"));
+        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, STONE_EDGE), MovesetRating.of("A3", null));
+        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("B6", "D10"));
+        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, CLOSE_COMBAT), MovesetRating.of("A2", null));
+        HITMONLEE.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("B5", "A1"));
+        HITMONLEE.movesetRanks.put(Moveset.of(LOW_KICK, BRICK_BREAK), MovesetRating.of("B4", "C6"));
         HITMONLEE.movesetRanks = Collections.unmodifiableMap(HITMONLEE.movesetRanks);
 
-        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, ICE_PUNCH), MovesetRating.of("B4", "B4"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("A1", "A1"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, THUNDER_PUNCH), MovesetRating.of("D8", "C8"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, ICE_PUNCH), MovesetRating.of("D7", "C7"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, BRICK_BREAK), MovesetRating.of("B5", "C5"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, THUNDER_PUNCH), MovesetRating.of("B2", "A2"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, FIRE_PUNCH), MovesetRating.of("B3", "B3"));
-        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, FIRE_PUNCH), MovesetRating.of("D6", "C6"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(COUNTER, FIRE_PUNCH), MovesetRating.of("B4", "B7"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, ICE_PUNCH), MovesetRating.of("D11", "C10"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, FIRE_PUNCH), MovesetRating.of("C9", "B4"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, THUNDER_PUNCH), MovesetRating.of("D12", "C9"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(COUNTER, THUNDER_PUNCH), MovesetRating.of("B3", "B5"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "B8"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, FIRE_PUNCH), MovesetRating.of("D13", "C11"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, CLOSE_COMBAT), MovesetRating.of("B6", "C13"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("B5", "A1"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, THUNDER_PUNCH), MovesetRating.of("C8", "A2"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(COUNTER, ICE_PUNCH), MovesetRating.of("B2", "B6"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(BULLET_PUNCH, BRICK_BREAK), MovesetRating.of("C10", "C12"));
+        HITMONCHAN.movesetRanks.put(Moveset.of(ROCK_SMASH, ICE_PUNCH), MovesetRating.of("C7", "B3"));
         HITMONCHAN.movesetRanks = Collections.unmodifiableMap(HITMONCHAN.movesetRanks);
 
-        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("B2", "C3"));
-        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, STOMP), MovesetRating.of("D6", "A2"));
-        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, POWER_WHIP), MovesetRating.of("D5", "F6"));
-        LICKITUNG.movesetRanks.put(Moveset.of(LICK, STOMP), MovesetRating.of("D4", "A1"));
-        LICKITUNG.movesetRanks.put(Moveset.of(LICK, HYPER_BEAM), MovesetRating.of("A1", "C4"));
-        LICKITUNG.movesetRanks.put(Moveset.of(LICK, POWER_WHIP), MovesetRating.of("D3", "F5"));
+        LICKITUNG.movesetRanks.put(Moveset.of(LICK, STOMP), MovesetRating.of("B3", "C5"));
+        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, POWER_WHIP), MovesetRating.of("C5", "A1"));
+        LICKITUNG.movesetRanks.put(Moveset.of(LICK, POWER_WHIP), MovesetRating.of("B2", "C4"));
+        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("B4", "B3"));
+        LICKITUNG.movesetRanks.put(Moveset.of(LICK, HYPER_BEAM), MovesetRating.of("A1", "D6"));
+        LICKITUNG.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, STOMP), MovesetRating.of("C6", "A2"));
         LICKITUNG.movesetRanks = Collections.unmodifiableMap(LICKITUNG.movesetRanks);
 
         KOFFING.movesetRanks.put(Moveset.of(TACKLE, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         KOFFING.movesetRanks = Collections.unmodifiableMap(KOFFING.movesetRanks);
 
-        WEEZING.movesetRanks.put(Moveset.of(TACKLE, SHADOW_BALL), MovesetRating.of("D5", "C4"));
-        WEEZING.movesetRanks.put(Moveset.of(ACID, SLUDGE_BOMB), MovesetRating.of("A1", "B2"));
-        WEEZING.movesetRanks.put(Moveset.of(TACKLE, DARK_PULSE), MovesetRating.of("F6", "C3"));
-        WEEZING.movesetRanks.put(Moveset.of(ACID, DARK_PULSE), MovesetRating.of("D3", "C5"));
-        WEEZING.movesetRanks.put(Moveset.of(ACID, SHADOW_BALL), MovesetRating.of("D4", "C6"));
-        WEEZING.movesetRanks.put(Moveset.of(TACKLE, SLUDGE_BOMB), MovesetRating.of("B2", "A1"));
+        WEEZING.movesetRanks.put(Moveset.of(INFESTATION, SHADOW_BALL), MovesetRating.of("C5", "A4"));
+        WEEZING.movesetRanks.put(Moveset.of(ACID, SLUDGE_BOMB), MovesetRating.of("A1", "A2"));
+        WEEZING.movesetRanks.put(Moveset.of(ACID, DARK_PULSE), MovesetRating.of("C7", "B5"));
+        WEEZING.movesetRanks.put(Moveset.of(TACKLE, SHADOW_BALL), MovesetRating.of("C6", "D7"));
+        WEEZING.movesetRanks.put(Moveset.of(TACKLE, SLUDGE_BOMB), MovesetRating.of("B4", "D9"));
+        WEEZING.movesetRanks.put(Moveset.of(INFESTATION, DARK_PULSE), MovesetRating.of("D9", "B6"));
+        WEEZING.movesetRanks.put(Moveset.of(TACKLE, DARK_PULSE), MovesetRating.of("D8", "D8"));
+        WEEZING.movesetRanks.put(Moveset.of(ACID, SHADOW_BALL), MovesetRating.of("B3", "A1"));
+        WEEZING.movesetRanks.put(Moveset.of(INFESTATION, SLUDGE_BOMB), MovesetRating.of("B2", "A3"));
         WEEZING.movesetRanks = Collections.unmodifiableMap(WEEZING.movesetRanks);
 
         RHYHORN.movesetRanks.put(Moveset.of(MUD_SLAP, BULLDOZE), MovesetRating.of(null, "A1"));
         RHYHORN.movesetRanks.put(Moveset.of(MUD_SLAP, STOMP), MovesetRating.of("A1", null));
         RHYHORN.movesetRanks = Collections.unmodifiableMap(RHYHORN.movesetRanks);
 
-        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("C4", "C4"));
+        RHYDON.movesetRanks.put(Moveset.of(MUD_SLAP, MEGAHORN), MovesetRating.of("C5", "C3"));
+        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, EARTHQUAKE), MovesetRating.of("B3", "C5"));
+        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, MEGAHORN), MovesetRating.of("C6", "D6"));
         RHYDON.movesetRanks.put(Moveset.of(MUD_SLAP, STONE_EDGE), MovesetRating.of("A2", "A1"));
-        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, EARTHQUAKE), MovesetRating.of("C3", "B3"));
         RHYDON.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "B2"));
-        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, MEGAHORN), MovesetRating.of("F6", "D6"));
-        RHYDON.movesetRanks.put(Moveset.of(MUD_SLAP, MEGAHORN), MovesetRating.of("D5", "C5"));
+        RHYDON.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("B4", "C4"));
         RHYDON.movesetRanks = Collections.unmodifiableMap(RHYDON.movesetRanks);
 
         CHANSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("C4", "B2"));
         CHANSEY.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("B3", "D5"));
-        CHANSEY.movesetRanks.put(Moveset.of(POUND, HYPER_BEAM), MovesetRating.of("A1", "A1"));
-        CHANSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("D5", "C3"));
         CHANSEY.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("B2", "C4"));
         CHANSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("F6", "D6"));
+        CHANSEY.movesetRanks.put(Moveset.of(POUND, HYPER_BEAM), MovesetRating.of("A1", "A1"));
+        CHANSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("D5", "C3"));
         CHANSEY.movesetRanks = Collections.unmodifiableMap(CHANSEY.movesetRanks);
 
-        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, POWER_WHIP), MovesetRating.of("B2", "C3"));
-        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, SLUDGE_BOMB), MovesetRating.of("C3", "A2"));
-        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", "A1"));
+        TANGELA.movesetRanks.put(Moveset.of(INFESTATION, SOLAR_BEAM), MovesetRating.of(null, "C6"));
+        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, GRASS_KNOT), MovesetRating.of("A2", "B4"));
+        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, SLUDGE_BOMB), MovesetRating.of("C6", "B5"));
+        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, POWER_WHIP), MovesetRating.of("A3", "B3"));
+        TANGELA.movesetRanks.put(Moveset.of(INFESTATION, GRASS_KNOT), MovesetRating.of("B5", "A1"));
+        TANGELA.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", "C7"));
+        TANGELA.movesetRanks.put(Moveset.of(INFESTATION, SLUDGE_BOMB), MovesetRating.of("C7", "A2"));
         TANGELA.movesetRanks = Collections.unmodifiableMap(TANGELA.movesetRanks);
 
-        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, STOMP), MovesetRating.of("B2", "A1"));
-        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, EARTHQUAKE), MovesetRating.of("B3", "F6"));
-        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, BRICK_BREAK), MovesetRating.of("C5", "D5"));
-        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("A1", "C4"));
-        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, BRICK_BREAK), MovesetRating.of("C4", "C3"));
-        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, STOMP), MovesetRating.of("C6", "B2"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, CRUNCH), MovesetRating.of("B8", "C8"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, CRUNCH), MovesetRating.of("B7", "A3"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, BRICK_BREAK), MovesetRating.of("C10", "B4"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, EARTHQUAKE), MovesetRating.of("B5", "D10"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, OUTRAGE), MovesetRating.of("A3", "A2"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, OUTRAGE), MovesetRating.of("A1", "C7"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, STOMP), MovesetRating.of("A4", "A1"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, BRICK_BREAK), MovesetRating.of("C9", "D9"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(MUD_SLAP, EARTHQUAKE), MovesetRating.of("B6", "B5"));
+        KANGASKHAN.movesetRanks.put(Moveset.of(LOW_KICK, STOMP), MovesetRating.of("A2", "C6"));
         KANGASKHAN.movesetRanks = Collections.unmodifiableMap(KANGASKHAN.movesetRanks);
 
         HORSEA.movesetRanks.put(Moveset.of(WATER_GUN, DRAGON_PULSE), MovesetRating.of("A1", null));
         HORSEA.movesetRanks.put(Moveset.of(BUBBLE, FLASH_CANNON), MovesetRating.of(null, "A1"));
         HORSEA.movesetRanks = Collections.unmodifiableMap(HORSEA.movesetRanks);
 
-        SEADRA.movesetRanks.put(Moveset.of(WATER_GUN, DRAGON_PULSE), MovesetRating.of("C4", "A1"));
-        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("C6", "A2"));
-        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, BLIZZARD), MovesetRating.of("C5", "C6"));
         SEADRA.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "B3"));
-        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("B2", "B4"));
         SEADRA.movesetRanks.put(Moveset.of(WATER_GUN, BLIZZARD), MovesetRating.of("B3", "B5"));
+        SEADRA.movesetRanks.put(Moveset.of(WATER_GUN, DRAGON_PULSE), MovesetRating.of("C4", "A1"));
+        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("B2", "B4"));
+        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, BLIZZARD), MovesetRating.of("C5", "C6"));
+        SEADRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("C6", "A2"));
         SEADRA.movesetRanks = Collections.unmodifiableMap(SEADRA.movesetRanks);
 
-        GOLDEEN.movesetRanks.put(Moveset.of(PECK, WATER_PULSE), MovesetRating.of(null, "A1"));
         GOLDEEN.movesetRanks.put(Moveset.of(MUD_SHOT, AQUA_TAIL), MovesetRating.of("A1", null));
+        GOLDEEN.movesetRanks.put(Moveset.of(PECK, WATER_PULSE), MovesetRating.of(null, "A1"));
         GOLDEEN.movesetRanks = Collections.unmodifiableMap(GOLDEEN.movesetRanks);
 
-        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, ICY_WIND), MovesetRating.of("C4", "D6"));
-        SEAKING.movesetRanks.put(Moveset.of(PECK, ICY_WIND), MovesetRating.of("F6", "D4"));
-        SEAKING.movesetRanks.put(Moveset.of(PECK, DRILL_RUN), MovesetRating.of("D5", "A2"));
-        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, MEGAHORN), MovesetRating.of("A1", "C3"));
-        SEAKING.movesetRanks.put(Moveset.of(PECK, MEGAHORN), MovesetRating.of("C3", "D5"));
-        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, DRILL_RUN), MovesetRating.of("C2", "A1"));
+        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, ICE_BEAM), MovesetRating.of("A3", "A1"));
+        SEAKING.movesetRanks.put(Moveset.of(PECK, DRILL_RUN), MovesetRating.of("B4", "A3"));
+        SEAKING.movesetRanks.put(Moveset.of(PECK, WATER_PULSE), MovesetRating.of("B5", "B5"));
+        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, WATER_PULSE), MovesetRating.of("A2", "B6"));
+        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, DRILL_RUN), MovesetRating.of("A1", "A4"));
+        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, ICY_WIND), MovesetRating.of("D9", "C9"));
+        SEAKING.movesetRanks.put(Moveset.of(PECK, MEGAHORN), MovesetRating.of("C8", "C7"));
+        SEAKING.movesetRanks.put(Moveset.of(PECK, ICY_WIND), MovesetRating.of("D10", "C8"));
+        SEAKING.movesetRanks.put(Moveset.of(PECK, ICE_BEAM), MovesetRating.of("B6", "A2"));
+        SEAKING.movesetRanks.put(Moveset.of(POISON_JAB, MEGAHORN), MovesetRating.of("C7", "D10"));
         SEAKING.movesetRanks = Collections.unmodifiableMap(SEAKING.movesetRanks);
 
         STARYU.movesetRanks.put(Moveset.of(TACKLE, BUBBLE_BEAM), MovesetRating.of(null, "A1"));
         STARYU.movesetRanks.put(Moveset.of(WATER_GUN, POWER_GEM), MovesetRating.of("A1", null));
         STARYU.movesetRanks = Collections.unmodifiableMap(STARYU.movesetRanks);
 
-        STARMIE.movesetRanks.put(Moveset.of(TACKLE, Move.PSYCHIC), MovesetRating.of("C5", "A1"));
-        STARMIE.movesetRanks.put(Moveset.of(TACKLE, POWER_GEM), MovesetRating.of("F6", "C4"));
-        STARMIE.movesetRanks.put(Moveset.of(TACKLE, HYDRO_PUMP), MovesetRating.of("C4", "C3"));
         STARMIE.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "C5"));
         STARMIE.movesetRanks.put(Moveset.of(WATER_GUN, POWER_GEM), MovesetRating.of("C3", "C6"));
+        STARMIE.movesetRanks.put(Moveset.of(TACKLE, Move.PSYCHIC), MovesetRating.of("C5", "A1"));
         STARMIE.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("A2", "B2"));
+        STARMIE.movesetRanks.put(Moveset.of(TACKLE, POWER_GEM), MovesetRating.of("F6", "C4"));
+        STARMIE.movesetRanks.put(Moveset.of(TACKLE, HYDRO_PUMP), MovesetRating.of("C4", "C3"));
         STARMIE.movesetRanks = Collections.unmodifiableMap(STARMIE.movesetRanks);
 
-        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B2", "A2"));
-        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("A1", "A4"));
-        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, PSYBEAM), MovesetRating.of("F5", "A1"));
-        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYBEAM), MovesetRating.of("C4", "A3"));
-        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SHADOW_BALL), MovesetRating.of("C3", "B6"));
-        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("F6", "B5"));
+        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("A1", "B3"));
+        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SHADOW_BALL), MovesetRating.of("B4", "B4"));
+        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYBEAM), MovesetRating.of("C6", "B5"));
+        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, PSYBEAM), MovesetRating.of("B3", "A2"));
+        MR_MIME.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("B5", "C6"));
+        MR_MIME.movesetRanks.put(Moveset.of(CONFUSION, SHADOW_BALL), MovesetRating.of("A2", "A1"));
         MR_MIME.movesetRanks = Collections.unmodifiableMap(MR_MIME.movesetRanks);
 
-        SCYTHER.movesetRanks.put(Moveset.of(STEEL_WING, NIGHT_SLASH), MovesetRating.of("F6", "F6"));
         SCYTHER.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("A2", "D4"));
-        SCYTHER.movesetRanks.put(Moveset.of(FURY_CUTTER, BUG_BUZZ), MovesetRating.of("A1", "C3"));
         SCYTHER.movesetRanks.put(Moveset.of(STEEL_WING, X_SCISSOR), MovesetRating.of("B4", "B2"));
         SCYTHER.movesetRanks.put(Moveset.of(FURY_CUTTER, NIGHT_SLASH), MovesetRating.of("F5", "F5"));
         SCYTHER.movesetRanks.put(Moveset.of(STEEL_WING, BUG_BUZZ), MovesetRating.of("B3", "A1"));
+        SCYTHER.movesetRanks.put(Moveset.of(STEEL_WING, NIGHT_SLASH), MovesetRating.of("F6", "F6"));
+        SCYTHER.movesetRanks.put(Moveset.of(FURY_CUTTER, BUG_BUZZ), MovesetRating.of("A1", "C3"));
         SCYTHER.movesetRanks = Collections.unmodifiableMap(SCYTHER.movesetRanks);
 
-        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, PSYSHOCK), MovesetRating.of("A3", "B4"));
-        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, DRAINING_KISS), MovesetRating.of("B4", "F5"));
-        JYNX.movesetRanks.put(Moveset.of(POUND, ICE_PUNCH), MovesetRating.of("B6", "B2"));
-        JYNX.movesetRanks.put(Moveset.of(POUND, DRAINING_KISS), MovesetRating.of("B5", "F6"));
-        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_PUNCH), MovesetRating.of("A2", "B3"));
-        JYNX.movesetRanks.put(Moveset.of(POUND, PSYSHOCK), MovesetRating.of("A1", "A1"));
+        JYNX.movesetRanks.put(Moveset.of(POUND, ICE_PUNCH), MovesetRating.of("C7", "D9"));
+        JYNX.movesetRanks.put(Moveset.of(CONFUSION, PSYSHOCK), MovesetRating.of("A3", "A3"));
+        JYNX.movesetRanks.put(Moveset.of(CONFUSION, DRAINING_KISS), MovesetRating.of("D9", "A2"));
+        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, PSYSHOCK), MovesetRating.of("B4", "C6"));
+        JYNX.movesetRanks.put(Moveset.of(POUND, DRAINING_KISS), MovesetRating.of("F10", "D10"));
+        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, DRAINING_KISS), MovesetRating.of("C8", "C5"));
+        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, AVALANCHE), MovesetRating.of("A1", "C4"));
+        JYNX.movesetRanks.put(Moveset.of(CONFUSION, AVALANCHE), MovesetRating.of("A2", "A1"));
+        JYNX.movesetRanks.put(Moveset.of(POUND, PSYSHOCK), MovesetRating.of("C6", "D8"));
+        JYNX.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_PUNCH), MovesetRating.of("B5", "C7"));
         JYNX.movesetRanks = Collections.unmodifiableMap(JYNX.movesetRanks);
 
-        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDER), MovesetRating.of("B5", "D5"));
-        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDER_PUNCH), MovesetRating.of("C6", "A1"));
-        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER_PUNCH), MovesetRating.of("B3", "B2"));
-        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDERBOLT), MovesetRating.of("A2", "C4"));
-        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("A1", "D6"));
-        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDERBOLT), MovesetRating.of("B4", "C3"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER_PUNCH), MovesetRating.of("B4", "C4"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDER_PUNCH), MovesetRating.of("C5", "A1"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDERBOLT), MovesetRating.of("A1", "B3"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDERBOLT), MovesetRating.of("B3", "A2"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("B2", "D6"));
+        ELECTABUZZ.movesetRanks.put(Moveset.of(LOW_KICK, THUNDER), MovesetRating.of("C6", "D5"));
         ELECTABUZZ.movesetRanks = Collections.unmodifiableMap(ELECTABUZZ.movesetRanks);
 
-        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A2", "A2"));
-        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A1", "B4"));
-        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FIRE_PUNCH), MovesetRating.of("C3", "A1"));
-        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FIRE_BLAST), MovesetRating.of("C5", "F6"));
-        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FIRE_PUNCH), MovesetRating.of("D6", "B3"));
-        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FLAMETHROWER), MovesetRating.of("C4", "C5"));
+        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FIRE_BLAST), MovesetRating.of("C6", "C5"));
+        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A1", "A1"));
+        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FIRE_PUNCH), MovesetRating.of("B5", "B3"));
+        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FLAMETHROWER), MovesetRating.of("B4", "A2"));
+        MAGMAR.movesetRanks.put(Moveset.of(KARATE_CHOP, FIRE_PUNCH), MovesetRating.of("B3", "B4"));
+        MAGMAR.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A2", "D6"));
         MAGMAR.movesetRanks = Collections.unmodifiableMap(MAGMAR.movesetRanks);
 
-        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, VICE_GRIP), MovesetRating.of("D4", "C4"));
-        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, SUBMISSION), MovesetRating.of("D5", "D5"));
-        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("A1", "B2"));
-        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, VICE_GRIP), MovesetRating.of("D6", "B3"));
-        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, X_SCISSOR), MovesetRating.of("C2", "A1"));
-        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, SUBMISSION), MovesetRating.of("D3", "F6"));
+        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("A2", "C8"));
+        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, X_SCISSOR), MovesetRating.of("B4", "A1"));
+        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, VICE_GRIP), MovesetRating.of("D10", "C9"));
+        PINSIR.movesetRanks.put(Moveset.of(BUG_BITE, VICE_GRIP), MovesetRating.of("D8", "B7"));
+        PINSIR.movesetRanks.put(Moveset.of(BUG_BITE, X_SCISSOR), MovesetRating.of("A1", "B5"));
+        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, CLOSE_COMBAT), MovesetRating.of("B5", "B4"));
+        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, VICE_GRIP), MovesetRating.of("D9", "A3"));
+        PINSIR.movesetRanks.put(Moveset.of(BUG_BITE, CLOSE_COMBAT), MovesetRating.of("A3", "B6"));
+        PINSIR.movesetRanks.put(Moveset.of(FURY_CUTTER, SUBMISSION), MovesetRating.of("B6", "D10"));
+        PINSIR.movesetRanks.put(Moveset.of(ROCK_SMASH, SUBMISSION), MovesetRating.of("C7", "A2"));
         PINSIR.movesetRanks = Collections.unmodifiableMap(PINSIR.movesetRanks);
 
-        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, EARTHQUAKE), MovesetRating.of("B2", "B5"));
-        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HORN_ATTACK), MovesetRating.of("C5", "A2"));
-        TAUROS.movesetRanks.put(Moveset.of(TACKLE, HORN_ATTACK), MovesetRating.of("B4", "A1"));
-        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, IRON_HEAD), MovesetRating.of("C6", "B6"));
-        TAUROS.movesetRanks.put(Moveset.of(TACKLE, IRON_HEAD), MovesetRating.of("B3", "B4"));
-        TAUROS.movesetRanks.put(Moveset.of(TACKLE, EARTHQUAKE), MovesetRating.of("A1", "B3"));
+        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, IRON_HEAD), MovesetRating.of("B5", "A1"));
+        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, EARTHQUAKE), MovesetRating.of("B4", "B3"));
+        TAUROS.movesetRanks.put(Moveset.of(TACKLE, EARTHQUAKE), MovesetRating.of("A1", "D6"));
+        TAUROS.movesetRanks.put(Moveset.of(TACKLE, IRON_HEAD), MovesetRating.of("B2", "C4"));
+        TAUROS.movesetRanks.put(Moveset.of(TACKLE, HORN_ATTACK), MovesetRating.of("B3", "C5"));
+        TAUROS.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HORN_ATTACK), MovesetRating.of("B6", "A2"));
         TAUROS.movesetRanks = Collections.unmodifiableMap(TAUROS.movesetRanks);
 
         MAGIKARP.movesetRanks.put(Moveset.of(SPLASH, STRUGGLE), MovesetRating.of("A1", "A1"));
         MAGIKARP.movesetRanks = Collections.unmodifiableMap(MAGIKARP.movesetRanks);
 
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, TWISTER), MovesetRating.of("F11", "F11"));
-        GYARADOS.movesetRanks.put(Moveset.of(BITE, OUTRAGE), MovesetRating.of("C7", "C7"));
-        GYARADOS.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("B5", "B5"));
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, CRUNCH), MovesetRating.of("B4", "B3"));
-        GYARADOS.movesetRanks.put(Moveset.of(BITE, DRAGON_PULSE), MovesetRating.of("D9", "D9"));
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("A2", "B4"));
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, OUTRAGE), MovesetRating.of("A3", "B2"));
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, HYDRO_PUMP), MovesetRating.of("A1", "A1"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, HYDRO_PUMP), MovesetRating.of("A2", "A1"));
+        GYARADOS.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("A4", "B5"));
         GYARADOS.movesetRanks.put(Moveset.of(BITE, TWISTER), MovesetRating.of("F10", "F10"));
+        GYARADOS.movesetRanks.put(Moveset.of(BITE, OUTRAGE), MovesetRating.of("B7", "C7"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, OUTRAGE), MovesetRating.of("A1", "B2"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("B6", "C6"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("A3", "B4"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_TAIL, CRUNCH), MovesetRating.of("B5", "B3"));
+        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, TWISTER), MovesetRating.of("F11", "F11"));
         GYARADOS.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("C8", "C8"));
-        GYARADOS.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("C6", "C6"));
+        GYARADOS.movesetRanks.put(Moveset.of(BITE, DRAGON_PULSE), MovesetRating.of("C9", "D9"));
         GYARADOS.movesetRanks = Collections.unmodifiableMap(GYARADOS.movesetRanks);
 
-        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", "C5"));
-        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, DRAGON_PULSE), MovesetRating.of("C6", "B4"));
-        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("B3", "A2"));
-        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_BEAM), MovesetRating.of("A2", "B3"));
-        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, DRAGON_PULSE), MovesetRating.of("C5", "C6"));
-        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_BEAM), MovesetRating.of("B4", "A1"));
+        LAPRAS.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "F10"));
+        LAPRAS.movesetRanks.put(Moveset.of(WATER_GUN, BLIZZARD), MovesetRating.of("A3", "F9"));
+        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_BEAM), MovesetRating.of("A5", "B3"));
+        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, HYDRO_PUMP), MovesetRating.of("A4", "C6"));
+        LAPRAS.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("A6", "D8"));
+        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, DRAGON_PULSE), MovesetRating.of("C9", "C7"));
+        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_BEAM), MovesetRating.of("B8", "A1"));
+        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, DRAGON_PULSE), MovesetRating.of("C10", "B4"));
+        LAPRAS.movesetRanks.put(Moveset.of(ICE_SHARD, BLIZZARD), MovesetRating.of("B7", "B2"));
+        LAPRAS.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A2", "C5"));
         LAPRAS.movesetRanks = Collections.unmodifiableMap(LAPRAS.movesetRanks);
 
         DITTO.movesetRanks.put(Moveset.of(TRANSFORM, STRUGGLE), MovesetRating.of("A1", "A1"));
@@ -2077,76 +2225,88 @@ public enum Pokemon {
         EEVEE.movesetRanks.put(Moveset.of(TACKLE, DIG), MovesetRating.of(null, "A1"));
         EEVEE.movesetRanks = Collections.unmodifiableMap(EEVEE.movesetRanks);
 
-        VAPOREON.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("B3", "B2"));
         VAPOREON.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "B3"));
         VAPOREON.movesetRanks.put(Moveset.of(WATER_GUN, AQUA_TAIL), MovesetRating.of("B2", "A1"));
+        VAPOREON.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("B3", "B2"));
         VAPOREON.movesetRanks = Collections.unmodifiableMap(VAPOREON.movesetRanks);
 
-        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, DISCHARGE), MovesetRating.of("D3", "A2"));
-        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("A2", "C3"));
-        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDERBOLT), MovesetRating.of("A1", "A1"));
+        JOLTEON.movesetRanks.put(Moveset.of(VOLT_SWITCH, THUNDERBOLT), MovesetRating.of("B3", "A2"));
+        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, DISCHARGE), MovesetRating.of("B2", "D4"));
+        JOLTEON.movesetRanks.put(Moveset.of(VOLT_SWITCH, DISCHARGE), MovesetRating.of("C5", "A1"));
+        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDERBOLT), MovesetRating.of("A1", "D5"));
+        JOLTEON.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("B4", "F6"));
+        JOLTEON.movesetRanks.put(Moveset.of(VOLT_SWITCH, THUNDER), MovesetRating.of("C6", "B3"));
         JOLTEON.movesetRanks = Collections.unmodifiableMap(JOLTEON.movesetRanks);
 
-        FLAREON.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("B2", "A1"));
-        FLAREON.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("A1", "B2"));
-        FLAREON.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("B3", "C3"));
+        FLAREON.movesetRanks.put(Moveset.of(FIRE_SPIN, FIRE_BLAST), MovesetRating.of("B3", "C4"));
+        FLAREON.movesetRanks.put(Moveset.of(FIRE_SPIN, FLAMETHROWER), MovesetRating.of("B5", "A1"));
+        FLAREON.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("B6", "B3"));
+        FLAREON.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("C7", "D7"));
+        FLAREON.movesetRanks.put(Moveset.of(FIRE_SPIN, OVERHEAT), MovesetRating.of("A1", "B2"));
+        FLAREON.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B4", "C6"));
+        FLAREON.movesetRanks.put(Moveset.of(EMBER, OVERHEAT), MovesetRating.of("B2", "C5"));
         FLAREON.movesetRanks = Collections.unmodifiableMap(FLAREON.movesetRanks);
 
-        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SIGNAL_BEAM), MovesetRating.of("B6", "A5"));
-        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DISCHARGE), MovesetRating.of("B4", "B6"));
-        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYBEAM), MovesetRating.of("B5", "A4"));
-        PORYGON.movesetRanks.put(Moveset.of(TACKLE, SIGNAL_BEAM), MovesetRating.of("A1", "A1"));
         PORYGON.movesetRanks.put(Moveset.of(TACKLE, PSYBEAM), MovesetRating.of("A3", "A2"));
         PORYGON.movesetRanks.put(Moveset.of(TACKLE, DISCHARGE), MovesetRating.of("A2", "A3"));
+        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYBEAM), MovesetRating.of("B5", "A4"));
+        PORYGON.movesetRanks.put(Moveset.of(TACKLE, SIGNAL_BEAM), MovesetRating.of("A1", "A1"));
+        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, SIGNAL_BEAM), MovesetRating.of("B6", "A5"));
+        PORYGON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DISCHARGE), MovesetRating.of("B4", "B6"));
         PORYGON.movesetRanks = Collections.unmodifiableMap(PORYGON.movesetRanks);
 
-        OMANYTE.movesetRanks.put(Moveset.of(WATER_GUN, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         OMANYTE.movesetRanks.put(Moveset.of(WATER_GUN, BRINE), MovesetRating.of("A1", null));
+        OMANYTE.movesetRanks.put(Moveset.of(WATER_GUN, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         OMANYTE.movesetRanks = Collections.unmodifiableMap(OMANYTE.movesetRanks);
 
-        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, ROCK_SLIDE), MovesetRating.of("C5", "B3"));
-        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("C4", "F8"));
-        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_SLIDE), MovesetRating.of("D6", "C4"));
-        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, ANCIENT_POWER), MovesetRating.of("D8", "B2"));
-        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("B2", "A1"));
-        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "F9"));
-        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, ANCIENT_POWER), MovesetRating.of("F9", "D7"));
-        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, ANCIENT_POWER), MovesetRating.of("D7", "C5"));
-        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, HYDRO_PUMP), MovesetRating.of("B3", "C6"));
+        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A3", "F11"));
+        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, ANCIENT_POWER), MovesetRating.of("C9", "D7"));
+        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_SLIDE), MovesetRating.of("B7", "C5"));
+        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("B6", "D10"));
+        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, HYDRO_PUMP), MovesetRating.of("A2", "B3"));
+        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, ANCIENT_POWER), MovesetRating.of("B4", "A2"));
+        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, ANCIENT_POWER), MovesetRating.of("D10", "C4"));
+        OMASTAR.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("A1", "A1"));
+        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, ROCK_BLAST), MovesetRating.of("C8", "D9"));
+        OMASTAR.movesetRanks.put(Moveset.of(WATER_GUN, ROCK_SLIDE), MovesetRating.of("B5", "D8"));
+        OMASTAR.movesetRanks.put(Moveset.of(MUD_SHOT, ROCK_BLAST), MovesetRating.of("D11", "C6"));
         OMASTAR.movesetRanks = Collections.unmodifiableMap(OMASTAR.movesetRanks);
 
-        KABUTO.movesetRanks.put(Moveset.of(SCRATCH, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         KABUTO.movesetRanks.put(Moveset.of(SCRATCH, AQUA_JET), MovesetRating.of("A1", null));
+        KABUTO.movesetRanks.put(Moveset.of(SCRATCH, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         KABUTO.movesetRanks = Collections.unmodifiableMap(KABUTO.movesetRanks);
 
-        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, STONE_EDGE), MovesetRating.of("A1", "F6"));
-        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, ANCIENT_POWER), MovesetRating.of("D6", "B3"));
-        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, WATER_PULSE), MovesetRating.of("C3", "A1"));
-        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, ANCIENT_POWER), MovesetRating.of("C4", "B4"));
-        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("C5", "A2"));
-        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, STONE_EDGE), MovesetRating.of("B2", "F5"));
+        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("D10", "D6"));
+        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, STONE_EDGE), MovesetRating.of("A1", "F9"));
+        KABUTOPS.movesetRanks.put(Moveset.of(ROCK_SMASH, WATER_PULSE), MovesetRating.of("D9", "C3"));
+        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, ANCIENT_POWER), MovesetRating.of("B4", "C4"));
+        KABUTOPS.movesetRanks.put(Moveset.of(ROCK_SMASH, ANCIENT_POWER), MovesetRating.of("C8", "A1"));
+        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, ANCIENT_POWER), MovesetRating.of("B3", "D7"));
+        KABUTOPS.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("C7", "B2"));
+        KABUTOPS.movesetRanks.put(Moveset.of(MUD_SHOT, STONE_EDGE), MovesetRating.of("B2", "C5"));
+        KABUTOPS.movesetRanks.put(Moveset.of(FURY_CUTTER, WATER_PULSE), MovesetRating.of("C5", "F8"));
         KABUTOPS.movesetRanks = Collections.unmodifiableMap(KABUTOPS.movesetRanks);
 
-        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, HYPER_BEAM), MovesetRating.of("B2", "B3"));
-        AERODACTYL.movesetRanks.put(Moveset.of(BITE, IRON_HEAD), MovesetRating.of("C4", "D6"));
-        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, ANCIENT_POWER), MovesetRating.of("F6", "A1"));
-        AERODACTYL.movesetRanks.put(Moveset.of(BITE, HYPER_BEAM), MovesetRating.of("A1", "D5"));
-        AERODACTYL.movesetRanks.put(Moveset.of(BITE, ANCIENT_POWER), MovesetRating.of("C3", "B2"));
-        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, IRON_HEAD), MovesetRating.of("D5", "C4"));
+        AERODACTYL.movesetRanks.put(Moveset.of(BITE, ANCIENT_POWER), MovesetRating.of("B3", "C3"));
+        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, HYPER_BEAM), MovesetRating.of("B2", "C4"));
+        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, ANCIENT_POWER), MovesetRating.of("C4", "A1"));
+        AERODACTYL.movesetRanks.put(Moveset.of(BITE, HYPER_BEAM), MovesetRating.of("A1", "F6"));
+        AERODACTYL.movesetRanks.put(Moveset.of(BITE, IRON_HEAD), MovesetRating.of("D5", "D5"));
+        AERODACTYL.movesetRanks.put(Moveset.of(STEEL_WING, IRON_HEAD), MovesetRating.of("F6", "B2"));
         AERODACTYL.movesetRanks = Collections.unmodifiableMap(AERODACTYL.movesetRanks);
 
-        SNORLAX.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("B3", "A1"));
-        SNORLAX.movesetRanks.put(Moveset.of(LICK, EARTHQUAKE), MovesetRating.of("D7", "D8"));
         SNORLAX.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, EARTHQUAKE), MovesetRating.of("D8", "C7"));
-        SNORLAX.movesetRanks.put(Moveset.of(LICK, BODY_SLAM), MovesetRating.of("A2", "B5"));
-        SNORLAX.movesetRanks.put(Moveset.of(LICK, HEAVY_SLAM), MovesetRating.of("C5", "B6"));
         SNORLAX.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, BODY_SLAM), MovesetRating.of("B4", "A2"));
+        SNORLAX.movesetRanks.put(Moveset.of(LICK, HEAVY_SLAM), MovesetRating.of("C5", "B6"));
+        SNORLAX.movesetRanks.put(Moveset.of(LICK, BODY_SLAM), MovesetRating.of("A2", "B5"));
+        SNORLAX.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("B3", "A1"));
         SNORLAX.movesetRanks.put(Moveset.of(LICK, HYPER_BEAM), MovesetRating.of("A1", "B4"));
         SNORLAX.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HEAVY_SLAM), MovesetRating.of("C6", "B3"));
+        SNORLAX.movesetRanks.put(Moveset.of(LICK, EARTHQUAKE), MovesetRating.of("D7", "D8"));
         SNORLAX.movesetRanks = Collections.unmodifiableMap(SNORLAX.movesetRanks);
 
-        ARTICUNO.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", null));
         ARTICUNO.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_BEAM), MovesetRating.of(null, "A1"));
+        ARTICUNO.movesetRanks.put(Moveset.of(FROST_BREATH, BLIZZARD), MovesetRating.of("A1", null));
         ARTICUNO.movesetRanks = Collections.unmodifiableMap(ARTICUNO.movesetRanks);
 
         ZAPDOS.movesetRanks.put(Moveset.of(THUNDER_SHOCK, THUNDER), MovesetRating.of("A1", null));
@@ -2164,21 +2324,21 @@ public enum Pokemon {
         DRAGONAIR.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("A1", "A1"));
         DRAGONAIR.movesetRanks = Collections.unmodifiableMap(DRAGONAIR.movesetRanks);
 
+        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_CLAW), MovesetRating.of("A3", "C10"));
         DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, HYPER_BEAM), MovesetRating.of("D11", "C8"));
+        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_TAIL, OUTRAGE), MovesetRating.of("A1", "A1"));
+        DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, OUTRAGE), MovesetRating.of("C7", "B4"));
         DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_TAIL, HURRICANE), MovesetRating.of("A2", "B2"));
-        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYPER_BEAM), MovesetRating.of("C5", "D11"));
+        DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, HURRICANE), MovesetRating.of("C8", "B5"));
         DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_PULSE), MovesetRating.of("C6", "C9"));
         DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_TAIL, HYPER_BEAM), MovesetRating.of("B4", "B3"));
-        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_TAIL, OUTRAGE), MovesetRating.of("A1", "A1"));
         DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, DRAGON_PULSE), MovesetRating.of("D10", "B6"));
-        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_BREATH, DRAGON_CLAW), MovesetRating.of("A3", "C10"));
-        DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, OUTRAGE), MovesetRating.of("C7", "B4"));
-        DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, HURRICANE), MovesetRating.of("C8", "B5"));
         DRAGONITE.movesetRanks.put(Moveset.of(STEEL_WING, DRAGON_CLAW), MovesetRating.of("C9", "B7"));
+        DRAGONITE.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYPER_BEAM), MovesetRating.of("C5", "D11"));
         DRAGONITE.movesetRanks = Collections.unmodifiableMap(DRAGONITE.movesetRanks);
 
-        MEWTWO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of(null, "A1"));
         MEWTWO.movesetRanks.put(Moveset.of(PSYCHO_CUT, Move.PSYCHIC), MovesetRating.of("A1", null));
+        MEWTWO.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of(null, "A1"));
         MEWTWO.movesetRanks = Collections.unmodifiableMap(MEWTWO.movesetRanks);
 
         MEW.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("A1", "A1"));
@@ -2190,12 +2350,12 @@ public enum Pokemon {
         BAYLEEF.movesetRanks.put(Moveset.of(RAZOR_LEAF, GRASS_KNOT), MovesetRating.of("A1", "A1"));
         BAYLEEF.movesetRanks = Collections.unmodifiableMap(BAYLEEF.movesetRanks);
 
-        MEGANIUM.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A2", "A1"));
         MEGANIUM.movesetRanks.put(Moveset.of(VINE_WHIP, EARTHQUAKE), MovesetRating.of("C6", "D6"));
+        MEGANIUM.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", "C5"));
         MEGANIUM.movesetRanks.put(Moveset.of(RAZOR_LEAF, EARTHQUAKE), MovesetRating.of("C5", "B3"));
         MEGANIUM.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("B4", "A2"));
+        MEGANIUM.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A2", "A1"));
         MEGANIUM.movesetRanks.put(Moveset.of(VINE_WHIP, PETAL_BLIZZARD), MovesetRating.of("B3", "C4"));
-        MEGANIUM.movesetRanks.put(Moveset.of(VINE_WHIP, SOLAR_BEAM), MovesetRating.of("A1", "C5"));
         MEGANIUM.movesetRanks = Collections.unmodifiableMap(MEGANIUM.movesetRanks);
 
         CYNDAQUIL.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A1", "A1"));
@@ -2204,94 +2364,93 @@ public enum Pokemon {
         QUILAVA.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A1", "A1"));
         QUILAVA.movesetRanks = Collections.unmodifiableMap(QUILAVA.movesetRanks);
 
-        TYPHLOSION.movesetRanks.put(Moveset.of(SHADOW_CLAW, FIRE_BLAST), MovesetRating.of("B4", "C6"));
         TYPHLOSION.movesetRanks.put(Moveset.of(SHADOW_CLAW, SOLAR_BEAM), MovesetRating.of("C6", "C5"));
-        TYPHLOSION.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B3", "B2"));
-        TYPHLOSION.movesetRanks.put(Moveset.of(EMBER, OVERHEAT), MovesetRating.of("A1", "A1"));
+        TYPHLOSION.movesetRanks.put(Moveset.of(SHADOW_CLAW, FIRE_BLAST), MovesetRating.of("B4", "C6"));
         TYPHLOSION.movesetRanks.put(Moveset.of(EMBER, SOLAR_BEAM), MovesetRating.of("C5", "B3"));
+        TYPHLOSION.movesetRanks.put(Moveset.of(EMBER, OVERHEAT), MovesetRating.of("A1", "A1"));
+        TYPHLOSION.movesetRanks.put(Moveset.of(EMBER, FIRE_BLAST), MovesetRating.of("B3", "B2"));
         TYPHLOSION.movesetRanks.put(Moveset.of(SHADOW_CLAW, OVERHEAT), MovesetRating.of("A2", "C4"));
         TYPHLOSION.movesetRanks = Collections.unmodifiableMap(TYPHLOSION.movesetRanks);
 
-        TOTODILE.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", null));
         TOTODILE.movesetRanks.put(Moveset.of(WATER_GUN, CRUNCH), MovesetRating.of(null, "A1"));
+        TOTODILE.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", null));
         TOTODILE.movesetRanks = Collections.unmodifiableMap(TOTODILE.movesetRanks);
 
-        CROCONAW.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", null));
         CROCONAW.movesetRanks.put(Moveset.of(WATER_GUN, CRUNCH), MovesetRating.of(null, "A1"));
+        CROCONAW.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", null));
         CROCONAW.movesetRanks = Collections.unmodifiableMap(CROCONAW.movesetRanks);
 
-        FERALIGATR.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("B2", "B6"));
-        FERALIGATR.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("C6", "B5"));
-        FERALIGATR.movesetRanks.put(Moveset.of(BITE, ICE_BEAM), MovesetRating.of("C4", "A2"));
-        FERALIGATR.movesetRanks.put(Moveset.of(WATER_GUN, CRUNCH), MovesetRating.of("C5", "B3"));
         FERALIGATR.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "B4"));
+        FERALIGATR.movesetRanks.put(Moveset.of(WATER_GUN, CRUNCH), MovesetRating.of("C5", "B3"));
+        FERALIGATR.movesetRanks.put(Moveset.of(BITE, ICE_BEAM), MovesetRating.of("C4", "A2"));
+        FERALIGATR.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("C6", "B5"));
         FERALIGATR.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("B3", "A1"));
+        FERALIGATR.movesetRanks.put(Moveset.of(BITE, HYDRO_PUMP), MovesetRating.of("B2", "B6"));
         FERALIGATR.movesetRanks = Collections.unmodifiableMap(FERALIGATR.movesetRanks);
 
         SENTRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, DIG), MovesetRating.of(null, "A1"));
         SENTRET.movesetRanks.put(Moveset.of(SCRATCH, GRASS_KNOT), MovesetRating.of("A1", null));
         SENTRET.movesetRanks = Collections.unmodifiableMap(SENTRET.movesetRanks);
 
-        FURRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_BEAM), MovesetRating.of("A1", "C5"));
-        FURRET.movesetRanks.put(Moveset.of(SUCKER_PUNCH, DIG), MovesetRating.of("C5", "B4"));
-        FURRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, DIG), MovesetRating.of("C3", "B3"));
+        FURRET.movesetRanks.put(Moveset.of(SUCKER_PUNCH, HYPER_BEAM), MovesetRating.of("B2", "C6"));
         FURRET.movesetRanks.put(Moveset.of(SUCKER_PUNCH, BRICK_BREAK), MovesetRating.of("C6", "A2"));
         FURRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, BRICK_BREAK), MovesetRating.of("C4", "A1"));
-        FURRET.movesetRanks.put(Moveset.of(SUCKER_PUNCH, HYPER_BEAM), MovesetRating.of("B2", "C6"));
+        FURRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, DIG), MovesetRating.of("C3", "B3"));
+        FURRET.movesetRanks.put(Moveset.of(SUCKER_PUNCH, DIG), MovesetRating.of("C5", "B4"));
+        FURRET.movesetRanks.put(Moveset.of(QUICK_ATTACK, HYPER_BEAM), MovesetRating.of("A1", "C5"));
         FURRET.movesetRanks = Collections.unmodifiableMap(FURRET.movesetRanks);
 
         HOOTHOOT.movesetRanks.put(Moveset.of(PECK, SKY_ATTACK), MovesetRating.of("A1", null));
         HOOTHOOT.movesetRanks.put(Moveset.of(PECK, AERIAL_ACE), MovesetRating.of(null, "A1"));
         HOOTHOOT.movesetRanks = Collections.unmodifiableMap(HOOTHOOT.movesetRanks);
 
-        NOCTOWL.movesetRanks.put(Moveset.of(WING_ATTACK, Move.PSYCHIC), MovesetRating.of("C4", "C6"));
         NOCTOWL.movesetRanks.put(Moveset.of(EXTRASENSORY, SKY_ATTACK), MovesetRating.of("B2", "A1"));
-        NOCTOWL.movesetRanks.put(Moveset.of(EXTRASENSORY, Move.PSYCHIC), MovesetRating.of("C3", "C4"));
-        NOCTOWL.movesetRanks.put(Moveset.of(EXTRASENSORY, NIGHT_SHADE), MovesetRating.of("D5", "C3"));
-        NOCTOWL.movesetRanks.put(Moveset.of(WING_ATTACK, SKY_ATTACK), MovesetRating.of("A1", "B2"));
         NOCTOWL.movesetRanks.put(Moveset.of(WING_ATTACK, NIGHT_SHADE), MovesetRating.of("D6", "C5"));
+        NOCTOWL.movesetRanks.put(Moveset.of(WING_ATTACK, Move.PSYCHIC), MovesetRating.of("C4", "C6"));
+        NOCTOWL.movesetRanks.put(Moveset.of(EXTRASENSORY, Move.PSYCHIC), MovesetRating.of("C3", "C4"));
+        NOCTOWL.movesetRanks.put(Moveset.of(WING_ATTACK, SKY_ATTACK), MovesetRating.of("A1", "B2"));
+        NOCTOWL.movesetRanks.put(Moveset.of(EXTRASENSORY, NIGHT_SHADE), MovesetRating.of("D5", "C3"));
         NOCTOWL.movesetRanks = Collections.unmodifiableMap(NOCTOWL.movesetRanks);
 
-        LEDYBA.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("A1", null));
         LEDYBA.movesetRanks.put(Moveset.of(BUG_BITE, SILVER_WIND), MovesetRating.of(null, "A1"));
+        LEDYBA.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("A1", null));
         LEDYBA.movesetRanks = Collections.unmodifiableMap(LEDYBA.movesetRanks);
 
-        LEDIAN.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("B4", "B5"));
-        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, BUG_BITE), MovesetRating.of(null, "A3"));
         LEDIAN.movesetRanks.put(Moveset.of(BUG_BITE, SILVER_WIND), MovesetRating.of("B3", "B4"));
-        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, SILVER_WIND), MovesetRating.of("B5", "A1"));
-        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, BUG_BUZZ), MovesetRating.of("A2", null));
-        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, AERIAL_ACE), MovesetRating.of("B6", "A2"));
         LEDIAN.movesetRanks.put(Moveset.of(BUG_BITE, BUG_BUZZ), MovesetRating.of("A1", "B6"));
+        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, SILVER_WIND), MovesetRating.of("B5", "A1"));
+        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, AERIAL_ACE), MovesetRating.of("B6", "A2"));
+        LEDIAN.movesetRanks.put(Moveset.of(STRUGGLE_BUG, BUG_BUZZ), MovesetRating.of("A2", "A3"));
+        LEDIAN.movesetRanks.put(Moveset.of(BUG_BITE, AERIAL_ACE), MovesetRating.of("B4", "B5"));
         LEDIAN.movesetRanks = Collections.unmodifiableMap(LEDIAN.movesetRanks);
 
-        SPINARAK.movesetRanks.put(Moveset.of(BUG_BITE, SIGNAL_BEAM), MovesetRating.of("A1", null));
         SPINARAK.movesetRanks.put(Moveset.of(POISON_STING, SIGNAL_BEAM), MovesetRating.of(null, "A1"));
+        SPINARAK.movesetRanks.put(Moveset.of(BUG_BITE, SIGNAL_BEAM), MovesetRating.of("A1", null));
         SPINARAK.movesetRanks = Collections.unmodifiableMap(SPINARAK.movesetRanks);
 
         ARIADOS.movesetRanks.put(Moveset.of(INFESTATION, SHADOW_SNEAK), MovesetRating.of("B5", "A2"));
         ARIADOS.movesetRanks.put(Moveset.of(POISON_STING, MEGAHORN), MovesetRating.of("A3", "D6"));
         ARIADOS.movesetRanks.put(Moveset.of(INFESTATION, MEGAHORN), MovesetRating.of("A1", "B3"));
-        ARIADOS.movesetRanks.put(Moveset.of(INFESTATION, CROSS_POISON), MovesetRating.of("A2", "A1"));
         ARIADOS.movesetRanks.put(Moveset.of(POISON_STING, CROSS_POISON), MovesetRating.of("A4", "C4"));
+        ARIADOS.movesetRanks.put(Moveset.of(INFESTATION, CROSS_POISON), MovesetRating.of("A2", "A1"));
         ARIADOS.movesetRanks.put(Moveset.of(POISON_STING, SHADOW_SNEAK), MovesetRating.of("B6", "C5"));
         ARIADOS.movesetRanks = Collections.unmodifiableMap(ARIADOS.movesetRanks);
 
-        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, AIR_CUTTER), MovesetRating.of("B5", "B3"));
-        CROBAT.movesetRanks.put(Moveset.of(BITE, AIR_CUTTER), MovesetRating.of("C6", "C6"));
-        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, SHADOW_BALL), MovesetRating.of("A2", "A2"));
-        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
         CROBAT.movesetRanks.put(Moveset.of(BITE, SLUDGE_BOMB), MovesetRating.of("A3", "C4"));
+        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, SHADOW_BALL), MovesetRating.of("A2", "A2"));
+        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, AIR_CUTTER), MovesetRating.of("B5", "B3"));
         CROBAT.movesetRanks.put(Moveset.of(BITE, SHADOW_BALL), MovesetRating.of("A4", "C5"));
+        CROBAT.movesetRanks.put(Moveset.of(AIR_SLASH, SLUDGE_BOMB), MovesetRating.of("A1", "A1"));
+        CROBAT.movesetRanks.put(Moveset.of(BITE, AIR_CUTTER), MovesetRating.of("C6", "C6"));
         CROBAT.movesetRanks = Collections.unmodifiableMap(CROBAT.movesetRanks);
 
         CHINCHOU.movesetRanks.put(Moveset.of(BUBBLE, THUNDERBOLT), MovesetRating.of("A1", "A1"));
         CHINCHOU.movesetRanks = Collections.unmodifiableMap(CHINCHOU.movesetRanks);
 
+        LANTURN.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "C4"));
+        LANTURN.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDERBOLT), MovesetRating.of("A3", "A2"));
         LANTURN.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDER), MovesetRating.of("B6", "B3"));
         LANTURN.movesetRanks.put(Moveset.of(WATER_GUN, THUNDERBOLT), MovesetRating.of("A2", "C6"));
-        LANTURN.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDERBOLT), MovesetRating.of("A3", "A2"));
-        LANTURN.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A1", "C4"));
         LANTURN.movesetRanks.put(Moveset.of(CHARGE_BEAM, HYDRO_PUMP), MovesetRating.of("B4", "A1"));
         LANTURN.movesetRanks.put(Moveset.of(WATER_GUN, THUNDER), MovesetRating.of("B5", "C5"));
         LANTURN.movesetRanks = Collections.unmodifiableMap(LANTURN.movesetRanks);
@@ -2310,29 +2469,29 @@ public enum Pokemon {
         TOGEPI.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYSHOCK), MovesetRating.of("A1", "A1"));
         TOGEPI.movesetRanks = Collections.unmodifiableMap(TOGEPI.movesetRanks);
 
-        TOGETIC.movesetRanks.put(Moveset.of(EXTRASENSORY, DAZZLING_GLEAM), MovesetRating.of("A3", "A3"));
-        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("A2", "A2"));
-        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, ANCIENT_POWER), MovesetRating.of("C10", "C10"));
-        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, AERIAL_ACE), MovesetRating.of("B6", "B6"));
-        TOGETIC.movesetRanks.put(Moveset.of(HIDDEN_POWER, AERIAL_ACE), MovesetRating.of("B8", "B8"));
-        TOGETIC.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("B5", "B5"));
         TOGETIC.movesetRanks.put(Moveset.of(STEEL_WING, ANCIENT_POWER), MovesetRating.of("C9", "C9"));
-        TOGETIC.movesetRanks.put(Moveset.of(EXTRASENSORY, ANCIENT_POWER), MovesetRating.of("C11", "C11"));
         TOGETIC.movesetRanks.put(Moveset.of(STEEL_WING, DAZZLING_GLEAM), MovesetRating.of("A1", "A1"));
+        TOGETIC.movesetRanks.put(Moveset.of(EXTRASENSORY, DAZZLING_GLEAM), MovesetRating.of("A3", "A3"));
+        TOGETIC.movesetRanks.put(Moveset.of(HIDDEN_POWER, AERIAL_ACE), MovesetRating.of("B8", "B8"));
         TOGETIC.movesetRanks.put(Moveset.of(HIDDEN_POWER, DAZZLING_GLEAM), MovesetRating.of("A4", "A4"));
+        TOGETIC.movesetRanks.put(Moveset.of(EXTRASENSORY, ANCIENT_POWER), MovesetRating.of("C11", "C11"));
+        TOGETIC.movesetRanks.put(Moveset.of(STEEL_WING, AERIAL_ACE), MovesetRating.of("B5", "B5"));
+        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, ANCIENT_POWER), MovesetRating.of("C10", "C10"));
         TOGETIC.movesetRanks.put(Moveset.of(EXTRASENSORY, AERIAL_ACE), MovesetRating.of("B7", "B7"));
+        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("A2", "A2"));
+        TOGETIC.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, AERIAL_ACE), MovesetRating.of("B6", "B6"));
         TOGETIC.movesetRanks.put(Moveset.of(HIDDEN_POWER, ANCIENT_POWER), MovesetRating.of("C12", "C12"));
         TOGETIC.movesetRanks = Collections.unmodifiableMap(TOGETIC.movesetRanks);
 
-        NATU.movesetRanks.put(Moveset.of(POUND, DRILL_PECK), MovesetRating.of("A1", null));
         NATU.movesetRanks.put(Moveset.of(POUND, PSYSHOCK), MovesetRating.of(null, "A1"));
+        NATU.movesetRanks.put(Moveset.of(POUND, DRILL_PECK), MovesetRating.of("A1", null));
         NATU.movesetRanks = Collections.unmodifiableMap(NATU.movesetRanks);
 
-        XATU.movesetRanks.put(Moveset.of(FEINT_ATTACK, OMINOUS_WIND), MovesetRating.of("C6", "B6"));
         XATU.movesetRanks.put(Moveset.of(FEINT_ATTACK, FUTURE_SIGHT), MovesetRating.of("A2", "B5"));
-        XATU.movesetRanks.put(Moveset.of(AIR_SLASH, AERIAL_ACE), MovesetRating.of("B3", "A1"));
         XATU.movesetRanks.put(Moveset.of(FEINT_ATTACK, AERIAL_ACE), MovesetRating.of("B4", "B4"));
+        XATU.movesetRanks.put(Moveset.of(AIR_SLASH, AERIAL_ACE), MovesetRating.of("B3", "A1"));
         XATU.movesetRanks.put(Moveset.of(AIR_SLASH, FUTURE_SIGHT), MovesetRating.of("A1", "A2"));
+        XATU.movesetRanks.put(Moveset.of(FEINT_ATTACK, OMINOUS_WIND), MovesetRating.of("C6", "B6"));
         XATU.movesetRanks.put(Moveset.of(AIR_SLASH, OMINOUS_WIND), MovesetRating.of("C5", "A3"));
         XATU.movesetRanks = Collections.unmodifiableMap(XATU.movesetRanks);
 
@@ -2343,47 +2502,47 @@ public enum Pokemon {
         FLAAFFY.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDERBOLT), MovesetRating.of("A1", null));
         FLAAFFY.movesetRanks = Collections.unmodifiableMap(FLAAFFY.movesetRanks);
 
-        AMPHAROS.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDER), MovesetRating.of("B3", "C5"));
         AMPHAROS.movesetRanks.put(Moveset.of(CHARGE_BEAM, FOCUS_BLAST), MovesetRating.of("C5", "D6"));
-        AMPHAROS.movesetRanks.put(Moveset.of(CHARGE_BEAM, ZAP_CANNON), MovesetRating.of("A1", "C4"));
         AMPHAROS.movesetRanks.put(Moveset.of(VOLT_SWITCH, ZAP_CANNON), MovesetRating.of("A2", "A1"));
-        AMPHAROS.movesetRanks.put(Moveset.of(VOLT_SWITCH, FOCUS_BLAST), MovesetRating.of("C6", "B3"));
         AMPHAROS.movesetRanks.put(Moveset.of(VOLT_SWITCH, THUNDER), MovesetRating.of("B4", "A2"));
+        AMPHAROS.movesetRanks.put(Moveset.of(CHARGE_BEAM, THUNDER), MovesetRating.of("B3", "C5"));
+        AMPHAROS.movesetRanks.put(Moveset.of(VOLT_SWITCH, FOCUS_BLAST), MovesetRating.of("C6", "B3"));
+        AMPHAROS.movesetRanks.put(Moveset.of(CHARGE_BEAM, ZAP_CANNON), MovesetRating.of("A1", "C4"));
         AMPHAROS.movesetRanks = Collections.unmodifiableMap(AMPHAROS.movesetRanks);
 
-        BELLOSSOM.movesetRanks.put(Moveset.of(ACID, PETAL_BLIZZARD), MovesetRating.of("B5", "D6"));
         BELLOSSOM.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("A2", "B3"));
-        BELLOSSOM.movesetRanks.put(Moveset.of(ACID, DAZZLING_GLEAM), MovesetRating.of("C6", "C5"));
-        BELLOSSOM.movesetRanks.put(Moveset.of(RAZOR_LEAF, DAZZLING_GLEAM), MovesetRating.of("B4", "B2"));
         BELLOSSOM.movesetRanks.put(Moveset.of(ACID, LEAF_BLADE), MovesetRating.of("B3", "C4"));
         BELLOSSOM.movesetRanks.put(Moveset.of(RAZOR_LEAF, LEAF_BLADE), MovesetRating.of("A1", "A1"));
+        BELLOSSOM.movesetRanks.put(Moveset.of(ACID, DAZZLING_GLEAM), MovesetRating.of("C6", "C5"));
+        BELLOSSOM.movesetRanks.put(Moveset.of(ACID, PETAL_BLIZZARD), MovesetRating.of("B5", "D6"));
+        BELLOSSOM.movesetRanks.put(Moveset.of(RAZOR_LEAF, DAZZLING_GLEAM), MovesetRating.of("B4", "B2"));
         BELLOSSOM.movesetRanks = Collections.unmodifiableMap(BELLOSSOM.movesetRanks);
 
         MARILL.movesetRanks.put(Moveset.of(BUBBLE, AQUA_TAIL), MovesetRating.of("A1", "A1"));
         MARILL.movesetRanks = Collections.unmodifiableMap(MARILL.movesetRanks);
 
         AZUMARILL.movesetRanks.put(Moveset.of(ROCK_SMASH, HYDRO_PUMP), MovesetRating.of("B4", "B4"));
-        AZUMARILL.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A1", "B3"));
         AZUMARILL.movesetRanks.put(Moveset.of(ROCK_SMASH, ICE_BEAM), MovesetRating.of("D6", "B6"));
+        AZUMARILL.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A1", "B3"));
         AZUMARILL.movesetRanks.put(Moveset.of(ROCK_SMASH, PLAY_ROUGH), MovesetRating.of("B3", "A1"));
         AZUMARILL.movesetRanks.put(Moveset.of(BUBBLE, PLAY_ROUGH), MovesetRating.of("A2", "B2"));
         AZUMARILL.movesetRanks.put(Moveset.of(BUBBLE, ICE_BEAM), MovesetRating.of("C5", "B5"));
         AZUMARILL.movesetRanks = Collections.unmodifiableMap(AZUMARILL.movesetRanks);
 
-        SUDOWOODO.movesetRanks.put(Moveset.of(COUNTER, STONE_EDGE), MovesetRating.of("B4", "C5"));
-        SUDOWOODO.movesetRanks.put(Moveset.of(ROCK_THROW, EARTHQUAKE), MovesetRating.of("B5", "B4"));
         SUDOWOODO.movesetRanks.put(Moveset.of(COUNTER, EARTHQUAKE), MovesetRating.of("C6", "C6"));
+        SUDOWOODO.movesetRanks.put(Moveset.of(ROCK_THROW, EARTHQUAKE), MovesetRating.of("B5", "B4"));
+        SUDOWOODO.movesetRanks.put(Moveset.of(COUNTER, STONE_EDGE), MovesetRating.of("B4", "C5"));
         SUDOWOODO.movesetRanks.put(Moveset.of(COUNTER, ROCK_SLIDE), MovesetRating.of("B3", "B2"));
         SUDOWOODO.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_SLIDE), MovesetRating.of("A1", "A1"));
         SUDOWOODO.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A2", "B3"));
         SUDOWOODO.movesetRanks = Collections.unmodifiableMap(SUDOWOODO.movesetRanks);
 
-        POLITOED.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("C6", "D6"));
-        POLITOED.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("B2", "C4"));
         POLITOED.movesetRanks.put(Moveset.of(BUBBLE, EARTHQUAKE), MovesetRating.of("B4", "B3"));
-        POLITOED.movesetRanks.put(Moveset.of(BUBBLE, BLIZZARD), MovesetRating.of("B3", "A2"));
-        POLITOED.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A1", "A1"));
+        POLITOED.movesetRanks.put(Moveset.of(MUD_SHOT, HYDRO_PUMP), MovesetRating.of("B2", "C4"));
+        POLITOED.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("C6", "D6"));
         POLITOED.movesetRanks.put(Moveset.of(MUD_SHOT, BLIZZARD), MovesetRating.of("C5", "C5"));
+        POLITOED.movesetRanks.put(Moveset.of(BUBBLE, HYDRO_PUMP), MovesetRating.of("A1", "A1"));
+        POLITOED.movesetRanks.put(Moveset.of(BUBBLE, BLIZZARD), MovesetRating.of("B3", "A2"));
         POLITOED.movesetRanks = Collections.unmodifiableMap(POLITOED.movesetRanks);
 
         HOPPIP.movesetRanks.put(Moveset.of(BULLET_SEED, GRASS_KNOT), MovesetRating.of("A1", "A1"));
@@ -2392,38 +2551,38 @@ public enum Pokemon {
         SKIPLOOM.movesetRanks.put(Moveset.of(BULLET_SEED, GRASS_KNOT), MovesetRating.of("A1", "A1"));
         SKIPLOOM.movesetRanks = Collections.unmodifiableMap(SKIPLOOM.movesetRanks);
 
-        JUMPLUFF.movesetRanks.put(Moveset.of(BULLET_SEED, DAZZLING_GLEAM), MovesetRating.of("C5", "A1"));
-        JUMPLUFF.movesetRanks.put(Moveset.of(INFESTATION, ENERGY_BALL), MovesetRating.of("B4", "A4"));
         JUMPLUFF.movesetRanks.put(Moveset.of(INFESTATION, SOLAR_BEAM), MovesetRating.of("A2", "B6"));
+        JUMPLUFF.movesetRanks.put(Moveset.of(BULLET_SEED, DAZZLING_GLEAM), MovesetRating.of("C5", "A1"));
         JUMPLUFF.movesetRanks.put(Moveset.of(BULLET_SEED, SOLAR_BEAM), MovesetRating.of("A1", "B5"));
+        JUMPLUFF.movesetRanks.put(Moveset.of(INFESTATION, ENERGY_BALL), MovesetRating.of("B4", "A4"));
         JUMPLUFF.movesetRanks.put(Moveset.of(BULLET_SEED, ENERGY_BALL), MovesetRating.of("B3", "A3"));
         JUMPLUFF.movesetRanks.put(Moveset.of(INFESTATION, DAZZLING_GLEAM), MovesetRating.of("C6", "A2"));
         JUMPLUFF.movesetRanks = Collections.unmodifiableMap(JUMPLUFF.movesetRanks);
 
+        AIPOM.movesetRanks.put(Moveset.of(SCRATCH, LOW_SWEEP), MovesetRating.of("B3", "B4"));
         AIPOM.movesetRanks.put(Moveset.of(ASTONISH, SWIFT), MovesetRating.of("C5", "A3"));
+        AIPOM.movesetRanks.put(Moveset.of(SCRATCH, AERIAL_ACE), MovesetRating.of("B2", "B5"));
         AIPOM.movesetRanks.put(Moveset.of(ASTONISH, AERIAL_ACE), MovesetRating.of("C4", "A2"));
         AIPOM.movesetRanks.put(Moveset.of(SCRATCH, SWIFT), MovesetRating.of("A1", "B6"));
-        AIPOM.movesetRanks.put(Moveset.of(SCRATCH, LOW_SWEEP), MovesetRating.of("B3", "B4"));
         AIPOM.movesetRanks.put(Moveset.of(ASTONISH, LOW_SWEEP), MovesetRating.of("D6", "A1"));
-        AIPOM.movesetRanks.put(Moveset.of(SCRATCH, AERIAL_ACE), MovesetRating.of("B2", "B5"));
         AIPOM.movesetRanks = Collections.unmodifiableMap(AIPOM.movesetRanks);
 
         SUNKERN.movesetRanks.put(Moveset.of(RAZOR_LEAF, GRASS_KNOT), MovesetRating.of("A1", "A1"));
         SUNKERN.movesetRanks = Collections.unmodifiableMap(SUNKERN.movesetRanks);
 
-        SUNFLORA.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "A2"));
-        SUNFLORA.movesetRanks.put(Moveset.of(BULLET_SEED, SOLAR_BEAM), MovesetRating.of("B2", "B5"));
         SUNFLORA.movesetRanks.put(Moveset.of(BULLET_SEED, SLUDGE_BOMB), MovesetRating.of("D6", "B4"));
-        SUNFLORA.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("B3", "A3"));
+        SUNFLORA.movesetRanks.put(Moveset.of(BULLET_SEED, SOLAR_BEAM), MovesetRating.of("B2", "B5"));
         SUNFLORA.movesetRanks.put(Moveset.of(RAZOR_LEAF, SLUDGE_BOMB), MovesetRating.of("C4", "A1"));
         SUNFLORA.movesetRanks.put(Moveset.of(BULLET_SEED, PETAL_BLIZZARD), MovesetRating.of("C5", "B6"));
+        SUNFLORA.movesetRanks.put(Moveset.of(RAZOR_LEAF, PETAL_BLIZZARD), MovesetRating.of("B3", "A3"));
+        SUNFLORA.movesetRanks.put(Moveset.of(RAZOR_LEAF, SOLAR_BEAM), MovesetRating.of("A1", "A2"));
         SUNFLORA.movesetRanks = Collections.unmodifiableMap(SUNFLORA.movesetRanks);
 
-        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, SILVER_WIND), MovesetRating.of("A2", "A2"));
-        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("A1", "A1"));
         YANMA.movesetRanks.put(Moveset.of(QUICK_ATTACK, ANCIENT_POWER), MovesetRating.of("B6", "B6"));
-        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, ANCIENT_POWER), MovesetRating.of("B5", "B5"));
         YANMA.movesetRanks.put(Moveset.of(QUICK_ATTACK, SILVER_WIND), MovesetRating.of("A4", "A4"));
+        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, ANCIENT_POWER), MovesetRating.of("B5", "B5"));
+        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("A1", "A1"));
+        YANMA.movesetRanks.put(Moveset.of(WING_ATTACK, SILVER_WIND), MovesetRating.of("A2", "A2"));
         YANMA.movesetRanks.put(Moveset.of(QUICK_ATTACK, AERIAL_ACE), MovesetRating.of("A3", "A3"));
         YANMA.movesetRanks = Collections.unmodifiableMap(YANMA.movesetRanks);
 
@@ -2431,50 +2590,50 @@ public enum Pokemon {
         WOOPER.movesetRanks.put(Moveset.of(WATER_GUN, DIG), MovesetRating.of("A1", null));
         WOOPER.movesetRanks = Collections.unmodifiableMap(WOOPER.movesetRanks);
 
-        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, STONE_EDGE), MovesetRating.of("B5", "B3"));
-        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, SLUDGE_BOMB), MovesetRating.of("B3", "A1"));
-        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, EARTHQUAKE), MovesetRating.of("A1", "B5"));
-        QUAGSIRE.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("A2", "B6"));
         QUAGSIRE.movesetRanks.put(Moveset.of(MUD_SHOT, SLUDGE_BOMB), MovesetRating.of("B4", "A2"));
         QUAGSIRE.movesetRanks.put(Moveset.of(MUD_SHOT, STONE_EDGE), MovesetRating.of("B6", "B4"));
+        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, STONE_EDGE), MovesetRating.of("B5", "B3"));
+        QUAGSIRE.movesetRanks.put(Moveset.of(MUD_SHOT, EARTHQUAKE), MovesetRating.of("A2", "B6"));
+        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, EARTHQUAKE), MovesetRating.of("A1", "B5"));
+        QUAGSIRE.movesetRanks.put(Moveset.of(WATER_GUN, SLUDGE_BOMB), MovesetRating.of("B3", "A1"));
         QUAGSIRE.movesetRanks = Collections.unmodifiableMap(QUAGSIRE.movesetRanks);
 
-        ESPEON.movesetRanks.put(Moveset.of(CONFUSION, PSYBEAM), MovesetRating.of("B3", "A1"));
-        ESPEON.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B4", "D5"));
         ESPEON.movesetRanks.put(Moveset.of(CONFUSION, FUTURE_SIGHT), MovesetRating.of("A1", "C3"));
-        ESPEON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("B5", "D6"));
         ESPEON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, PSYBEAM), MovesetRating.of("C6", "B2"));
         ESPEON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, FUTURE_SIGHT), MovesetRating.of("A2", "C4"));
+        ESPEON.movesetRanks.put(Moveset.of(CONFUSION, PSYBEAM), MovesetRating.of("B3", "A1"));
+        ESPEON.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("B5", "D6"));
+        ESPEON.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("B4", "D5"));
         ESPEON.movesetRanks = Collections.unmodifiableMap(ESPEON.movesetRanks);
 
         UMBREON.movesetRanks.put(Moveset.of(SNARL, DARK_PULSE), MovesetRating.of("B4", "A1"));
-        UMBREON.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("B3", "B3"));
         UMBREON.movesetRanks.put(Moveset.of(SNARL, FOUL_PLAY), MovesetRating.of("A2", "A2"));
         UMBREON.movesetRanks.put(Moveset.of(FEINT_ATTACK, FOUL_PLAY), MovesetRating.of("A1", "B4"));
+        UMBREON.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("B3", "B3"));
         UMBREON.movesetRanks = Collections.unmodifiableMap(UMBREON.movesetRanks);
 
-        MURKROW.movesetRanks.put(Moveset.of(PECK, FOUL_PLAY), MovesetRating.of("B4", "B6"));
-        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("B2", "B3"));
-        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, DRILL_PECK), MovesetRating.of("B3", "A1"));
-        MURKROW.movesetRanks.put(Moveset.of(PECK, DARK_PULSE), MovesetRating.of("B6", "B4"));
-        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, FOUL_PLAY), MovesetRating.of("A1", "B5"));
         MURKROW.movesetRanks.put(Moveset.of(PECK, DRILL_PECK), MovesetRating.of("B5", "A2"));
+        MURKROW.movesetRanks.put(Moveset.of(PECK, FOUL_PLAY), MovesetRating.of("B4", "B6"));
+        MURKROW.movesetRanks.put(Moveset.of(PECK, DARK_PULSE), MovesetRating.of("B6", "B4"));
+        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, DRILL_PECK), MovesetRating.of("B3", "A1"));
+        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, FOUL_PLAY), MovesetRating.of("A1", "B5"));
+        MURKROW.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("B2", "B3"));
         MURKROW.movesetRanks = Collections.unmodifiableMap(MURKROW.movesetRanks);
 
+        SLOWKING.movesetRanks.put(Moveset.of(WATER_GUN, BLIZZARD), MovesetRating.of("A4", "C5"));
         SLOWKING.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("A1", "A2"));
         SLOWKING.movesetRanks.put(Moveset.of(CONFUSION, FIRE_BLAST), MovesetRating.of("C5", "B3"));
-        SLOWKING.movesetRanks.put(Moveset.of(CONFUSION, BLIZZARD), MovesetRating.of("A2", "A1"));
-        SLOWKING.movesetRanks.put(Moveset.of(WATER_GUN, BLIZZARD), MovesetRating.of("A4", "C5"));
         SLOWKING.movesetRanks.put(Moveset.of(WATER_GUN, Move.PSYCHIC), MovesetRating.of("A3", "C4"));
         SLOWKING.movesetRanks.put(Moveset.of(WATER_GUN, FIRE_BLAST), MovesetRating.of("D6", "D6"));
+        SLOWKING.movesetRanks.put(Moveset.of(CONFUSION, BLIZZARD), MovesetRating.of("A2", "A1"));
         SLOWKING.movesetRanks = Collections.unmodifiableMap(SLOWKING.movesetRanks);
 
-        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, DARK_PULSE), MovesetRating.of("B3", "A1"));
-        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, OMINOUS_WIND), MovesetRating.of("A1", "A2"));
-        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, SHADOW_SNEAK), MovesetRating.of("B5", "B4"));
         MISDREAVUS.movesetRanks.put(Moveset.of(ASTONISH, SHADOW_SNEAK), MovesetRating.of("B6", "B6"));
-        MISDREAVUS.movesetRanks.put(Moveset.of(ASTONISH, DARK_PULSE), MovesetRating.of("B4", "A3"));
         MISDREAVUS.movesetRanks.put(Moveset.of(ASTONISH, OMINOUS_WIND), MovesetRating.of("A2", "B5"));
+        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, OMINOUS_WIND), MovesetRating.of("A1", "A2"));
+        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, DARK_PULSE), MovesetRating.of("B3", "A1"));
+        MISDREAVUS.movesetRanks.put(Moveset.of(HEX, SHADOW_SNEAK), MovesetRating.of("B5", "B4"));
+        MISDREAVUS.movesetRanks.put(Moveset.of(ASTONISH, DARK_PULSE), MovesetRating.of("B4", "A3"));
         MISDREAVUS.movesetRanks = Collections.unmodifiableMap(MISDREAVUS.movesetRanks);
 
         UNOWN.movesetRanks.put(Moveset.of(HIDDEN_POWER, STRUGGLE), MovesetRating.of("A1", "A1"));
@@ -2484,97 +2643,97 @@ public enum Pokemon {
         WOBBUFFET.movesetRanks.put(Moveset.of(COUNTER, MIRROR_COAT), MovesetRating.of("A1", "A1"));
         WOBBUFFET.movesetRanks = Collections.unmodifiableMap(WOBBUFFET.movesetRanks);
 
+        GIRAFARIG.movesetRanks.put(Moveset.of(CONFUSION, MIRROR_COAT), MovesetRating.of("A3", "A2"));
+        GIRAFARIG.movesetRanks.put(Moveset.of(TACKLE, THUNDERBOLT), MovesetRating.of("B4", "C4"));
         GIRAFARIG.movesetRanks.put(Moveset.of(CONFUSION, Move.PSYCHIC), MovesetRating.of("A1", "B3"));
+        GIRAFARIG.movesetRanks.put(Moveset.of(TACKLE, Move.PSYCHIC), MovesetRating.of("B5", "D6"));
         GIRAFARIG.movesetRanks.put(Moveset.of(TACKLE, MIRROR_COAT), MovesetRating.of("B6", "C5"));
         GIRAFARIG.movesetRanks.put(Moveset.of(CONFUSION, THUNDERBOLT), MovesetRating.of("A2", "A1"));
-        GIRAFARIG.movesetRanks.put(Moveset.of(TACKLE, Move.PSYCHIC), MovesetRating.of("B5", "D6"));
-        GIRAFARIG.movesetRanks.put(Moveset.of(TACKLE, THUNDERBOLT), MovesetRating.of("B4", "C4"));
-        GIRAFARIG.movesetRanks.put(Moveset.of(CONFUSION, MIRROR_COAT), MovesetRating.of("A3", "A2"));
         GIRAFARIG.movesetRanks = Collections.unmodifiableMap(GIRAFARIG.movesetRanks);
 
         PINECO.movesetRanks.put(Moveset.of(BUG_BITE, GYRO_BALL), MovesetRating.of("A1", "A1"));
         PINECO.movesetRanks = Collections.unmodifiableMap(PINECO.movesetRanks);
 
+        FORRETRESS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, ROCK_TOMB), MovesetRating.of("C6", "A2"));
+        FORRETRESS.movesetRanks.put(Moveset.of(BUG_BITE, HEAVY_SLAM), MovesetRating.of("A1", "B4"));
         FORRETRESS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, HEAVY_SLAM), MovesetRating.of("B2", "A1"));
         FORRETRESS.movesetRanks.put(Moveset.of(BUG_BITE, ROCK_TOMB), MovesetRating.of("B4", "B5"));
-        FORRETRESS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, EARTHQUAKE), MovesetRating.of("C5", "A3"));
         FORRETRESS.movesetRanks.put(Moveset.of(BUG_BITE, EARTHQUAKE), MovesetRating.of("B3", "C6"));
-        FORRETRESS.movesetRanks.put(Moveset.of(BUG_BITE, HEAVY_SLAM), MovesetRating.of("A1", "B4"));
-        FORRETRESS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, ROCK_TOMB), MovesetRating.of("C6", "A2"));
+        FORRETRESS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, EARTHQUAKE), MovesetRating.of("C5", "A3"));
         FORRETRESS.movesetRanks = Collections.unmodifiableMap(FORRETRESS.movesetRanks);
 
-        DUNSPARCE.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("B5", "C6"));
-        DUNSPARCE.movesetRanks.put(Moveset.of(BITE, ROCK_SLIDE), MovesetRating.of("A1", "C4"));
         DUNSPARCE.movesetRanks.put(Moveset.of(ASTONISH, DRILL_RUN), MovesetRating.of("B4", "A2"));
-        DUNSPARCE.movesetRanks.put(Moveset.of(ASTONISH, ROCK_SLIDE), MovesetRating.of("B3", "A1"));
         DUNSPARCE.movesetRanks.put(Moveset.of(ASTONISH, DIG), MovesetRating.of("B6", "A3"));
+        DUNSPARCE.movesetRanks.put(Moveset.of(ASTONISH, ROCK_SLIDE), MovesetRating.of("B3", "A1"));
         DUNSPARCE.movesetRanks.put(Moveset.of(BITE, DRILL_RUN), MovesetRating.of("A2", "C5"));
+        DUNSPARCE.movesetRanks.put(Moveset.of(BITE, ROCK_SLIDE), MovesetRating.of("A1", "C4"));
+        DUNSPARCE.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("B5", "C6"));
         DUNSPARCE.movesetRanks = Collections.unmodifiableMap(DUNSPARCE.movesetRanks);
 
         GLIGAR.movesetRanks.put(Moveset.of(FURY_CUTTER, DIG), MovesetRating.of("B5", "C4"));
         GLIGAR.movesetRanks.put(Moveset.of(FURY_CUTTER, NIGHT_SLASH), MovesetRating.of("C6", "C6"));
-        GLIGAR.movesetRanks.put(Moveset.of(WING_ATTACK, NIGHT_SLASH), MovesetRating.of("B4", "A3"));
-        GLIGAR.movesetRanks.put(Moveset.of(FURY_CUTTER, AERIAL_ACE), MovesetRating.of("B3", "C5"));
         GLIGAR.movesetRanks.put(Moveset.of(WING_ATTACK, DIG), MovesetRating.of("A2", "A1"));
+        GLIGAR.movesetRanks.put(Moveset.of(FURY_CUTTER, AERIAL_ACE), MovesetRating.of("B3", "C5"));
         GLIGAR.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("A1", "A2"));
+        GLIGAR.movesetRanks.put(Moveset.of(WING_ATTACK, NIGHT_SLASH), MovesetRating.of("B4", "A3"));
         GLIGAR.movesetRanks = Collections.unmodifiableMap(GLIGAR.movesetRanks);
 
-        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, HEAVY_SLAM), MovesetRating.of("A1", "A1"));
-        STEELIX.movesetRanks.put(Moveset.of(DRAGON_TAIL, CRUNCH), MovesetRating.of("C6", "B5"));
-        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, CRUNCH), MovesetRating.of("B5", "B4"));
         STEELIX.movesetRanks.put(Moveset.of(DRAGON_TAIL, EARTHQUAKE), MovesetRating.of("A4", "B3"));
-        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, EARTHQUAKE), MovesetRating.of("A2", "B6"));
         STEELIX.movesetRanks.put(Moveset.of(DRAGON_TAIL, HEAVY_SLAM), MovesetRating.of("A3", "A2"));
+        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, CRUNCH), MovesetRating.of("B5", "B4"));
+        STEELIX.movesetRanks.put(Moveset.of(DRAGON_TAIL, CRUNCH), MovesetRating.of("C6", "B5"));
+        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, EARTHQUAKE), MovesetRating.of("A2", "B6"));
+        STEELIX.movesetRanks.put(Moveset.of(IRON_TAIL, HEAVY_SLAM), MovesetRating.of("A1", "A1"));
         STEELIX.movesetRanks = Collections.unmodifiableMap(STEELIX.movesetRanks);
 
         SNUBBULL.movesetRanks.put(Moveset.of(BITE, DAZZLING_GLEAM), MovesetRating.of("A1", "A1"));
         SNUBBULL.movesetRanks = Collections.unmodifiableMap(SNUBBULL.movesetRanks);
 
-        GRANBULL.movesetRanks.put(Moveset.of(SNARL, CRUNCH), MovesetRating.of("C5", "B2"));
-        GRANBULL.movesetRanks.put(Moveset.of(BITE, CLOSE_COMBAT), MovesetRating.of("B3", null));
         GRANBULL.movesetRanks.put(Moveset.of(SNARL, PLAY_ROUGH), MovesetRating.of("A2", "A1"));
-        GRANBULL.movesetRanks.put(Moveset.of(BITE, PLAY_ROUGH), MovesetRating.of("A1", "C3"));
-        GRANBULL.movesetRanks.put(Moveset.of(SNARL, CLOSE_COMBAT), MovesetRating.of("D6", "C4"));
         GRANBULL.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("B4", "D5"));
+        GRANBULL.movesetRanks.put(Moveset.of(BITE, CLOSE_COMBAT), MovesetRating.of("B3", null));
+        GRANBULL.movesetRanks.put(Moveset.of(SNARL, CLOSE_COMBAT), MovesetRating.of("D6", "C4"));
+        GRANBULL.movesetRanks.put(Moveset.of(BITE, PLAY_ROUGH), MovesetRating.of("A1", "C3"));
+        GRANBULL.movesetRanks.put(Moveset.of(SNARL, CRUNCH), MovesetRating.of("C5", "B2"));
         GRANBULL.movesetRanks = Collections.unmodifiableMap(GRANBULL.movesetRanks);
 
-        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, SLUDGE_WAVE), MovesetRating.of("A2", "C6"));
-        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, AQUA_TAIL), MovesetRating.of("A1", "B3"));
         QWILFISH.movesetRanks.put(Moveset.of(POISON_STING, SLUDGE_WAVE), MovesetRating.of("A3", "C5"));
-        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C5", "C4"));
-        QWILFISH.movesetRanks.put(Moveset.of(POISON_STING, ICE_BEAM), MovesetRating.of("D6", "A2"));
         QWILFISH.movesetRanks.put(Moveset.of(POISON_STING, AQUA_TAIL), MovesetRating.of("B4", "A1"));
+        QWILFISH.movesetRanks.put(Moveset.of(POISON_STING, ICE_BEAM), MovesetRating.of("D6", "A2"));
+        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, AQUA_TAIL), MovesetRating.of("A1", "B3"));
+        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, SLUDGE_WAVE), MovesetRating.of("A2", "C6"));
+        QWILFISH.movesetRanks.put(Moveset.of(WATER_GUN, ICE_BEAM), MovesetRating.of("C5", "C4"));
         QWILFISH.movesetRanks = Collections.unmodifiableMap(QWILFISH.movesetRanks);
 
-        SCIZOR.movesetRanks.put(Moveset.of(BULLET_PUNCH, NIGHT_SLASH), MovesetRating.of("C5", "A3"));
+        SCIZOR.movesetRanks.put(Moveset.of(BULLET_PUNCH, X_SCISSOR), MovesetRating.of("A3", "A1"));
         SCIZOR.movesetRanks.put(Moveset.of(FURY_CUTTER, X_SCISSOR), MovesetRating.of("A4", "C4"));
-        SCIZOR.movesetRanks.put(Moveset.of(FURY_CUTTER, IRON_HEAD), MovesetRating.of("A2", "C5"));
         SCIZOR.movesetRanks.put(Moveset.of(FURY_CUTTER, NIGHT_SLASH), MovesetRating.of("C6", "C6"));
         SCIZOR.movesetRanks.put(Moveset.of(BULLET_PUNCH, IRON_HEAD), MovesetRating.of("A1", "A2"));
-        SCIZOR.movesetRanks.put(Moveset.of(BULLET_PUNCH, X_SCISSOR), MovesetRating.of("A3", "A1"));
+        SCIZOR.movesetRanks.put(Moveset.of(BULLET_PUNCH, NIGHT_SLASH), MovesetRating.of("C5", "A3"));
+        SCIZOR.movesetRanks.put(Moveset.of(FURY_CUTTER, IRON_HEAD), MovesetRating.of("A2", "C5"));
         SCIZOR.movesetRanks = Collections.unmodifiableMap(SCIZOR.movesetRanks);
 
-        SHUCKLE.movesetRanks.put(Moveset.of(ROCK_THROW, GYRO_BALL), MovesetRating.of("B4", "B5"));
-        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, ROCK_BLAST), MovesetRating.of("B5", "A1"));
-        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, STONE_EDGE), MovesetRating.of("B3", "A3"));
-        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, GYRO_BALL), MovesetRating.of("C6", "A2"));
-        SHUCKLE.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A1", "B6"));
         SHUCKLE.movesetRanks.put(Moveset.of(ROCK_THROW, ROCK_BLAST), MovesetRating.of("A2", "B4"));
+        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, GYRO_BALL), MovesetRating.of("C6", "A2"));
+        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, STONE_EDGE), MovesetRating.of("B3", "A3"));
+        SHUCKLE.movesetRanks.put(Moveset.of(ROCK_THROW, GYRO_BALL), MovesetRating.of("B4", "B5"));
+        SHUCKLE.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A1", "B6"));
+        SHUCKLE.movesetRanks.put(Moveset.of(STRUGGLE_BUG, ROCK_BLAST), MovesetRating.of("B5", "A1"));
         SHUCKLE.movesetRanks = Collections.unmodifiableMap(SHUCKLE.movesetRanks);
 
         HERACROSS.movesetRanks.put(Moveset.of(COUNTER, EARTHQUAKE), MovesetRating.of("B3", "C6"));
-        HERACROSS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, EARTHQUAKE), MovesetRating.of("C6", "B3"));
-        HERACROSS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, MEGAHORN), MovesetRating.of("B5", "A2"));
-        HERACROSS.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "C5"));
         HERACROSS.movesetRanks.put(Moveset.of(COUNTER, MEGAHORN), MovesetRating.of("A2", "B4"));
         HERACROSS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, CLOSE_COMBAT), MovesetRating.of("B4", "A1"));
+        HERACROSS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, MEGAHORN), MovesetRating.of("B5", "A2"));
+        HERACROSS.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "C5"));
+        HERACROSS.movesetRanks.put(Moveset.of(STRUGGLE_BUG, EARTHQUAKE), MovesetRating.of("C6", "B3"));
         HERACROSS.movesetRanks = Collections.unmodifiableMap(HERACROSS.movesetRanks);
 
-        SNEASEL.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_PUNCH), MovesetRating.of("B4", "A1"));
-        SNEASEL.movesetRanks.put(Moveset.of(FEINT_ATTACK, ICE_PUNCH), MovesetRating.of("B6", "B4"));
-        SNEASEL.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of("A3", "A2"));
         SNEASEL.movesetRanks.put(Moveset.of(FEINT_ATTACK, AVALANCHE), MovesetRating.of("A2", "B5"));
+        SNEASEL.movesetRanks.put(Moveset.of(FEINT_ATTACK, ICE_PUNCH), MovesetRating.of("B6", "B4"));
         SNEASEL.movesetRanks.put(Moveset.of(ICE_SHARD, FOUL_PLAY), MovesetRating.of("B5", "B3"));
+        SNEASEL.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of("A3", "A2"));
+        SNEASEL.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_PUNCH), MovesetRating.of("B4", "A1"));
         SNEASEL.movesetRanks.put(Moveset.of(FEINT_ATTACK, FOUL_PLAY), MovesetRating.of("A1", "C6"));
         SNEASEL.movesetRanks = Collections.unmodifiableMap(SNEASEL.movesetRanks);
 
@@ -2583,134 +2742,134 @@ public enum Pokemon {
         TEDDIURSA.movesetRanks = Collections.unmodifiableMap(TEDDIURSA.movesetRanks);
 
         URSARING.movesetRanks.put(Moveset.of(COUNTER, HYPER_BEAM), MovesetRating.of("A1", "B3"));
-        URSARING.movesetRanks.put(Moveset.of(COUNTER, PLAY_ROUGH), MovesetRating.of("B3", "A1"));
-        URSARING.movesetRanks.put(Moveset.of(METAL_CLAW, HYPER_BEAM), MovesetRating.of("A2", "B4"));
         URSARING.movesetRanks.put(Moveset.of(METAL_CLAW, CLOSE_COMBAT), MovesetRating.of("C6", "D6"));
+        URSARING.movesetRanks.put(Moveset.of(METAL_CLAW, HYPER_BEAM), MovesetRating.of("A2", "B4"));
+        URSARING.movesetRanks.put(Moveset.of(COUNTER, PLAY_ROUGH), MovesetRating.of("B3", "A1"));
         URSARING.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("B4", "C5"));
         URSARING.movesetRanks.put(Moveset.of(METAL_CLAW, PLAY_ROUGH), MovesetRating.of("B5", "A2"));
         URSARING.movesetRanks = Collections.unmodifiableMap(URSARING.movesetRanks);
 
-        SLUGMA.movesetRanks.put(Moveset.of(EMBER, FLAME_CHARGE), MovesetRating.of(null, "A1"));
         SLUGMA.movesetRanks.put(Moveset.of(EMBER, FLAME_BURST), MovesetRating.of("A1", null));
+        SLUGMA.movesetRanks.put(Moveset.of(EMBER, FLAME_CHARGE), MovesetRating.of(null, "A1"));
         SLUGMA.movesetRanks = Collections.unmodifiableMap(SLUGMA.movesetRanks);
 
-        MAGCARGO.movesetRanks.put(Moveset.of(ROCK_THROW, HEAT_WAVE), MovesetRating.of("B4", "C5"));
         MAGCARGO.movesetRanks.put(Moveset.of(ROCK_THROW, OVERHEAT), MovesetRating.of("A2", "B3"));
+        MAGCARGO.movesetRanks.put(Moveset.of(ROCK_THROW, HEAT_WAVE), MovesetRating.of("B4", "C5"));
         MAGCARGO.movesetRanks.put(Moveset.of(EMBER, STONE_EDGE), MovesetRating.of("B5", "A2"));
-        MAGCARGO.movesetRanks.put(Moveset.of(EMBER, OVERHEAT), MovesetRating.of("A1", "B4"));
         MAGCARGO.movesetRanks.put(Moveset.of(EMBER, HEAT_WAVE), MovesetRating.of("B6", "C6"));
         MAGCARGO.movesetRanks.put(Moveset.of(ROCK_THROW, STONE_EDGE), MovesetRating.of("A3", "A1"));
+        MAGCARGO.movesetRanks.put(Moveset.of(EMBER, OVERHEAT), MovesetRating.of("A1", "B4"));
         MAGCARGO.movesetRanks = Collections.unmodifiableMap(MAGCARGO.movesetRanks);
 
         SWINUB.movesetRanks.put(Moveset.of(POWDER_SNOW, ROCK_SLIDE), MovesetRating.of("A1", "A1"));
         SWINUB.movesetRanks = Collections.unmodifiableMap(SWINUB.movesetRanks);
 
-        PILOSWINE.movesetRanks.put(Moveset.of(POWDER_SNOW, STONE_EDGE), MovesetRating.of("C6", "B5"));
-        PILOSWINE.movesetRanks.put(Moveset.of(ICE_SHARD, BULLDOZE), MovesetRating.of("B3", "A2"));
-        PILOSWINE.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of("A1", "A1"));
-        PILOSWINE.movesetRanks.put(Moveset.of(POWDER_SNOW, BULLDOZE), MovesetRating.of("B4", "B4"));
         PILOSWINE.movesetRanks.put(Moveset.of(POWDER_SNOW, AVALANCHE), MovesetRating.of("A2", "B6"));
         PILOSWINE.movesetRanks.put(Moveset.of(ICE_SHARD, STONE_EDGE), MovesetRating.of("C5", "A3"));
+        PILOSWINE.movesetRanks.put(Moveset.of(ICE_SHARD, BULLDOZE), MovesetRating.of("B3", "A2"));
+        PILOSWINE.movesetRanks.put(Moveset.of(POWDER_SNOW, STONE_EDGE), MovesetRating.of("C6", "B5"));
+        PILOSWINE.movesetRanks.put(Moveset.of(ICE_SHARD, AVALANCHE), MovesetRating.of("A1", "A1"));
+        PILOSWINE.movesetRanks.put(Moveset.of(POWDER_SNOW, BULLDOZE), MovesetRating.of("B4", "B4"));
         PILOSWINE.movesetRanks = Collections.unmodifiableMap(PILOSWINE.movesetRanks);
 
-        CORSOLA.movesetRanks.put(Moveset.of(TACKLE, ROCK_BLAST), MovesetRating.of("B5", "C4"));
         CORSOLA.movesetRanks.put(Moveset.of(TACKLE, BUBBLE_BEAM), MovesetRating.of("C6", "C6"));
-        CORSOLA.movesetRanks.put(Moveset.of(BUBBLE, BUBBLE_BEAM), MovesetRating.of("A2", "B3"));
         CORSOLA.movesetRanks.put(Moveset.of(TACKLE, POWER_GEM), MovesetRating.of("B4", "C5"));
         CORSOLA.movesetRanks.put(Moveset.of(BUBBLE, POWER_GEM), MovesetRating.of("A1", "A2"));
         CORSOLA.movesetRanks.put(Moveset.of(BUBBLE, ROCK_BLAST), MovesetRating.of("A3", "A1"));
+        CORSOLA.movesetRanks.put(Moveset.of(BUBBLE, BUBBLE_BEAM), MovesetRating.of("A2", "B3"));
+        CORSOLA.movesetRanks.put(Moveset.of(TACKLE, ROCK_BLAST), MovesetRating.of("B5", "C4"));
         CORSOLA.movesetRanks = Collections.unmodifiableMap(CORSOLA.movesetRanks);
 
         REMORAID.movesetRanks.put(Moveset.of(WATER_GUN, ROCK_BLAST), MovesetRating.of(null, "A1"));
         REMORAID.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", null));
         REMORAID.movesetRanks = Collections.unmodifiableMap(REMORAID.movesetRanks);
 
-        OCTILLERY.movesetRanks.put(Moveset.of(WATER_GUN, AURORA_BEAM), MovesetRating.of("C5", "B4"));
-        OCTILLERY.movesetRanks.put(Moveset.of(MUD_SHOT, GUNK_SHOT), MovesetRating.of("B2", "C6"));
+        OCTILLERY.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("B4", "A1"));
         OCTILLERY.movesetRanks.put(Moveset.of(WATER_GUN, WATER_PULSE), MovesetRating.of("A1", "A2"));
         OCTILLERY.movesetRanks.put(Moveset.of(WATER_GUN, GUNK_SHOT), MovesetRating.of("B3", null));
-        OCTILLERY.movesetRanks.put(Moveset.of(MUD_SHOT, WATER_PULSE), MovesetRating.of("B4", "A1"));
+        OCTILLERY.movesetRanks.put(Moveset.of(WATER_GUN, AURORA_BEAM), MovesetRating.of("C5", "B4"));
+        OCTILLERY.movesetRanks.put(Moveset.of(MUD_SHOT, GUNK_SHOT), MovesetRating.of("B2", "C6"));
         OCTILLERY.movesetRanks.put(Moveset.of(MUD_SHOT, AURORA_BEAM), MovesetRating.of("D6", "B3"));
         OCTILLERY.movesetRanks = Collections.unmodifiableMap(OCTILLERY.movesetRanks);
 
         DELIBIRD.movesetRanks.put(Moveset.of(QUICK_ATTACK, ICY_WIND), MovesetRating.of("B6", "B5"));
-        DELIBIRD.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_PUNCH), MovesetRating.of("A1", "A1"));
-        DELIBIRD.movesetRanks.put(Moveset.of(QUICK_ATTACK, AERIAL_ACE), MovesetRating.of("A4", "B6"));
-        DELIBIRD.movesetRanks.put(Moveset.of(ICE_SHARD, AERIAL_ACE), MovesetRating.of("A2", "A2"));
         DELIBIRD.movesetRanks.put(Moveset.of(ICE_SHARD, ICY_WIND), MovesetRating.of("B5", "A3"));
         DELIBIRD.movesetRanks.put(Moveset.of(QUICK_ATTACK, ICE_PUNCH), MovesetRating.of("A3", "B4"));
+        DELIBIRD.movesetRanks.put(Moveset.of(ICE_SHARD, ICE_PUNCH), MovesetRating.of("A1", "A1"));
+        DELIBIRD.movesetRanks.put(Moveset.of(ICE_SHARD, AERIAL_ACE), MovesetRating.of("A2", "A2"));
+        DELIBIRD.movesetRanks.put(Moveset.of(QUICK_ATTACK, AERIAL_ACE), MovesetRating.of("A4", "B6"));
         DELIBIRD.movesetRanks = Collections.unmodifiableMap(DELIBIRD.movesetRanks);
 
-        MANTINE.movesetRanks.put(Moveset.of(WING_ATTACK, WATER_PULSE), MovesetRating.of("B6", "B5"));
-        MANTINE.movesetRanks.put(Moveset.of(BUBBLE, WATER_PULSE), MovesetRating.of("A2", "A2"));
         MANTINE.movesetRanks.put(Moveset.of(BUBBLE, AERIAL_ACE), MovesetRating.of("A3", "A3"));
-        MANTINE.movesetRanks.put(Moveset.of(WING_ATTACK, ICE_BEAM), MovesetRating.of("B4", "B4"));
-        MANTINE.movesetRanks.put(Moveset.of(BUBBLE, ICE_BEAM), MovesetRating.of("B5", "A1"));
         MANTINE.movesetRanks.put(Moveset.of(WING_ATTACK, AERIAL_ACE), MovesetRating.of("A1", "B6"));
+        MANTINE.movesetRanks.put(Moveset.of(BUBBLE, WATER_PULSE), MovesetRating.of("A2", "A2"));
+        MANTINE.movesetRanks.put(Moveset.of(WING_ATTACK, ICE_BEAM), MovesetRating.of("B4", "B4"));
+        MANTINE.movesetRanks.put(Moveset.of(WING_ATTACK, WATER_PULSE), MovesetRating.of("B6", "B5"));
+        MANTINE.movesetRanks.put(Moveset.of(BUBBLE, ICE_BEAM), MovesetRating.of("B5", "A1"));
         MANTINE.movesetRanks = Collections.unmodifiableMap(MANTINE.movesetRanks);
 
-        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, SKY_ATTACK), MovesetRating.of(null, "A1"));
-        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, FLASH_CANNON), MovesetRating.of(null, "B3"));
-        SKARMORY.movesetRanks.put(Moveset.of(STEEL_WING, BRAVE_BIRD), MovesetRating.of(null, "C5"));
         SKARMORY.movesetRanks.put(Moveset.of(STEEL_WING, FLASH_CANNON), MovesetRating.of("A1", "D6"));
-        SKARMORY.movesetRanks.put(Moveset.of(STEEL_WING, SKY_ATTACK), MovesetRating.of(null, "B4"));
-        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, BRAVE_BIRD), MovesetRating.of(null, "B2"));
+        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, BRAVE_BIRD), MovesetRating.of("B4", "B2"));
+        SKARMORY.movesetRanks.put(Moveset.of(STEEL_WING, BRAVE_BIRD), MovesetRating.of("A3", "C5"));
+        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, SKY_ATTACK), MovesetRating.of("B5", "A1"));
+        SKARMORY.movesetRanks.put(Moveset.of(STEEL_WING, SKY_ATTACK), MovesetRating.of("A2", "B4"));
+        SKARMORY.movesetRanks.put(Moveset.of(AIR_SLASH, FLASH_CANNON), MovesetRating.of("C6", "B3"));
         SKARMORY.movesetRanks = Collections.unmodifiableMap(SKARMORY.movesetRanks);
 
-        HOUNDOUR.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("A1", null));
         HOUNDOUR.movesetRanks.put(Moveset.of(EMBER, CRUNCH), MovesetRating.of(null, "A1"));
+        HOUNDOUR.movesetRanks.put(Moveset.of(FEINT_ATTACK, DARK_PULSE), MovesetRating.of("A1", null));
         HOUNDOUR.movesetRanks = Collections.unmodifiableMap(HOUNDOUR.movesetRanks);
 
-        HOUNDOOM.movesetRanks.put(Moveset.of(SNARL, CRUNCH), MovesetRating.of("B6", "A1"));
-        HOUNDOOM.movesetRanks.put(Moveset.of(FIRE_FANG, FOUL_PLAY), MovesetRating.of("B3", "B5"));
-        HOUNDOOM.movesetRanks.put(Moveset.of(SNARL, FIRE_BLAST), MovesetRating.of("B4", "B4"));
-        HOUNDOOM.movesetRanks.put(Moveset.of(FIRE_FANG, FIRE_BLAST), MovesetRating.of("A2", "C6"));
         HOUNDOOM.movesetRanks.put(Moveset.of(SNARL, FOUL_PLAY), MovesetRating.of("A1", "A2"));
         HOUNDOOM.movesetRanks.put(Moveset.of(FIRE_FANG, CRUNCH), MovesetRating.of("B5", "B3"));
+        HOUNDOOM.movesetRanks.put(Moveset.of(SNARL, FIRE_BLAST), MovesetRating.of("B4", "B4"));
+        HOUNDOOM.movesetRanks.put(Moveset.of(FIRE_FANG, FIRE_BLAST), MovesetRating.of("A2", "C6"));
+        HOUNDOOM.movesetRanks.put(Moveset.of(FIRE_FANG, FOUL_PLAY), MovesetRating.of("B3", "B5"));
+        HOUNDOOM.movesetRanks.put(Moveset.of(SNARL, CRUNCH), MovesetRating.of("B6", "A1"));
         HOUNDOOM.movesetRanks = Collections.unmodifiableMap(HOUNDOOM.movesetRanks);
 
-        KINGDRA.movesetRanks.put(Moveset.of(WATER_GUN, OUTRAGE), MovesetRating.of("A3", "B4"));
-        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("A2", "A2"));
-        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, OUTRAGE), MovesetRating.of("A1", "A1"));
         KINGDRA.movesetRanks.put(Moveset.of(WATER_GUN, HYDRO_PUMP), MovesetRating.of("A4", "B5"));
-        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, BLIZZARD), MovesetRating.of("B6", "B3"));
         KINGDRA.movesetRanks.put(Moveset.of(WATER_GUN, BLIZZARD), MovesetRating.of("B5", "C6"));
+        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, OUTRAGE), MovesetRating.of("A1", "A1"));
+        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, HYDRO_PUMP), MovesetRating.of("A2", "A2"));
+        KINGDRA.movesetRanks.put(Moveset.of(DRAGON_BREATH, BLIZZARD), MovesetRating.of("B6", "B3"));
+        KINGDRA.movesetRanks.put(Moveset.of(WATER_GUN, OUTRAGE), MovesetRating.of("A3", "B4"));
         KINGDRA.movesetRanks = Collections.unmodifiableMap(KINGDRA.movesetRanks);
 
         PHANPY.movesetRanks.put(Moveset.of(ROCK_SMASH, BULLDOZE), MovesetRating.of("A1", "A1"));
         PHANPY.movesetRanks = Collections.unmodifiableMap(PHANPY.movesetRanks);
 
-        DONPHAN.movesetRanks.put(Moveset.of(COUNTER, HEAVY_SLAM), MovesetRating.of("B3", "B3"));
-        DONPHAN.movesetRanks.put(Moveset.of(TACKLE, HEAVY_SLAM), MovesetRating.of("D6", "C4"));
-        DONPHAN.movesetRanks.put(Moveset.of(COUNTER, PLAY_ROUGH), MovesetRating.of("B2", "A1"));
         DONPHAN.movesetRanks.put(Moveset.of(COUNTER, EARTHQUAKE), MovesetRating.of("A1", "D5"));
+        DONPHAN.movesetRanks.put(Moveset.of(TACKLE, HEAVY_SLAM), MovesetRating.of("D6", "C4"));
         DONPHAN.movesetRanks.put(Moveset.of(TACKLE, PLAY_ROUGH), MovesetRating.of("C5", "B2"));
+        DONPHAN.movesetRanks.put(Moveset.of(COUNTER, PLAY_ROUGH), MovesetRating.of("B2", "A1"));
+        DONPHAN.movesetRanks.put(Moveset.of(COUNTER, HEAVY_SLAM), MovesetRating.of("B3", "B3"));
         DONPHAN.movesetRanks.put(Moveset.of(TACKLE, EARTHQUAKE), MovesetRating.of("B4", "F6"));
         DONPHAN.movesetRanks = Collections.unmodifiableMap(DONPHAN.movesetRanks);
 
         PORYGON2.movesetRanks = Collections.unmodifiableMap(PORYGON2.movesetRanks);
 
+        STANTLER.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, WILD_CHARGE), MovesetRating.of("B3", "A2"));
+        STANTLER.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, MEGAHORN), MovesetRating.of("C6", "B5"));
         STANTLER.movesetRanks.put(Moveset.of(TACKLE, MEGAHORN), MovesetRating.of("B4", "C6"));
         STANTLER.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, STOMP), MovesetRating.of("B5", "A1"));
-        STANTLER.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, MEGAHORN), MovesetRating.of("C6", "B5"));
-        STANTLER.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, WILD_CHARGE), MovesetRating.of("B3", "A2"));
-        STANTLER.movesetRanks.put(Moveset.of(TACKLE, STOMP), MovesetRating.of("A1", "B3"));
         STANTLER.movesetRanks.put(Moveset.of(TACKLE, WILD_CHARGE), MovesetRating.of("A2", "B4"));
+        STANTLER.movesetRanks.put(Moveset.of(TACKLE, STOMP), MovesetRating.of("A1", "B3"));
         STANTLER.movesetRanks = Collections.unmodifiableMap(STANTLER.movesetRanks);
 
         SMEARGLE.movesetRanks.put(Moveset.of(TACKLE, STRUGGLE), MovesetRating.of("A1", "A1"));
         SMEARGLE.movesetRanks = Collections.unmodifiableMap(SMEARGLE.movesetRanks);
 
-        TYROGUE.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("A1", null));
         TYROGUE.movesetRanks.put(Moveset.of(ROCK_SMASH, ROCK_SLIDE), MovesetRating.of(null, "A1"));
+        TYROGUE.movesetRanks.put(Moveset.of(ROCK_SMASH, BRICK_BREAK), MovesetRating.of("A1", null));
         TYROGUE.movesetRanks = Collections.unmodifiableMap(TYROGUE.movesetRanks);
 
-        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, STONE_EDGE), MovesetRating.of("B3", "B5"));
-        HITMONTOP.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("C4", "A1"));
-        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, GYRO_BALL), MovesetRating.of("D5", "B4"));
         HITMONTOP.movesetRanks.put(Moveset.of(ROCK_SMASH, GYRO_BALL), MovesetRating.of("F6", "A2"));
-        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "C6"));
+        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, GYRO_BALL), MovesetRating.of("D5", "B4"));
+        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, STONE_EDGE), MovesetRating.of("B3", "B5"));
         HITMONTOP.movesetRanks.put(Moveset.of(ROCK_SMASH, CLOSE_COMBAT), MovesetRating.of("B2", "B3"));
+        HITMONTOP.movesetRanks.put(Moveset.of(COUNTER, CLOSE_COMBAT), MovesetRating.of("A1", "C6"));
+        HITMONTOP.movesetRanks.put(Moveset.of(ROCK_SMASH, STONE_EDGE), MovesetRating.of("C4", "A1"));
         HITMONTOP.movesetRanks = Collections.unmodifiableMap(HITMONTOP.movesetRanks);
 
         SMOOCHUM.movesetRanks.put(Moveset.of(FROST_BREATH, ICE_BEAM), MovesetRating.of(null, "A1"));
@@ -2723,20 +2882,20 @@ public enum Pokemon {
         MAGBY.movesetRanks.put(Moveset.of(EMBER, FLAMETHROWER), MovesetRating.of("A1", "A1"));
         MAGBY.movesetRanks = Collections.unmodifiableMap(MAGBY.movesetRanks);
 
-        MILTANK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, GYRO_BALL), MovesetRating.of("D6", "A3"));
-        MILTANK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, STOMP), MovesetRating.of("B3", "A2"));
-        MILTANK.movesetRanks.put(Moveset.of(TACKLE, GYRO_BALL), MovesetRating.of("C5", null));
-        MILTANK.movesetRanks.put(Moveset.of(TACKLE, STOMP), MovesetRating.of("A1", null));
+        MILTANK.movesetRanks.put(Moveset.of(TACKLE, BODY_SLAM), MovesetRating.of("A2", "C4"));
         MILTANK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, BODY_SLAM), MovesetRating.of("B4", "A1"));
-        MILTANK.movesetRanks.put(Moveset.of(TACKLE, BODY_SLAM), MovesetRating.of("A2", null));
+        MILTANK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, GYRO_BALL), MovesetRating.of("D6", "B3"));
+        MILTANK.movesetRanks.put(Moveset.of(TACKLE, GYRO_BALL), MovesetRating.of("C5", "C5"));
+        MILTANK.movesetRanks.put(Moveset.of(TACKLE, STOMP), MovesetRating.of("A1", "D6"));
+        MILTANK.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, STOMP), MovesetRating.of("B3", "A2"));
         MILTANK.movesetRanks = Collections.unmodifiableMap(MILTANK.movesetRanks);
 
         BLISSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, HYPER_BEAM), MovesetRating.of("B4", "B3"));
+        BLISSEY.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("B2", "A2"));
         BLISSEY.movesetRanks.put(Moveset.of(POUND, Move.PSYCHIC), MovesetRating.of("B3", "D5"));
+        BLISSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("C5", "A1"));
         BLISSEY.movesetRanks.put(Moveset.of(POUND, HYPER_BEAM), MovesetRating.of("A1", "B4"));
         BLISSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, Move.PSYCHIC), MovesetRating.of("D6", "D6"));
-        BLISSEY.movesetRanks.put(Moveset.of(POUND, DAZZLING_GLEAM), MovesetRating.of("B2", "A2"));
-        BLISSEY.movesetRanks.put(Moveset.of(ZEN_HEADBUTT, DAZZLING_GLEAM), MovesetRating.of("C5", "A1"));
         BLISSEY.movesetRanks = Collections.unmodifiableMap(BLISSEY.movesetRanks);
 
         RAIKOU.movesetRanks = Collections.unmodifiableMap(RAIKOU.movesetRanks);
@@ -2745,19 +2904,19 @@ public enum Pokemon {
 
         SUICUNE.movesetRanks = Collections.unmodifiableMap(SUICUNE.movesetRanks);
 
-        LARVITAR.movesetRanks.put(Moveset.of(ROCK_SMASH, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         LARVITAR.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("A1", null));
+        LARVITAR.movesetRanks.put(Moveset.of(ROCK_SMASH, ANCIENT_POWER), MovesetRating.of(null, "A1"));
         LARVITAR.movesetRanks = Collections.unmodifiableMap(LARVITAR.movesetRanks);
 
-        PUPITAR.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("A1", null));
         PUPITAR.movesetRanks.put(Moveset.of(ROCK_SMASH, ANCIENT_POWER), MovesetRating.of(null, "A1"));
+        PUPITAR.movesetRanks.put(Moveset.of(BITE, DIG), MovesetRating.of("A1", null));
         PUPITAR.movesetRanks = Collections.unmodifiableMap(PUPITAR.movesetRanks);
 
-        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, FIRE_BLAST), MovesetRating.of("D6", "C3"));
-        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, STONE_EDGE), MovesetRating.of("C4", "B2"));
         TYRANITAR.movesetRanks.put(Moveset.of(BITE, STONE_EDGE), MovesetRating.of("A1", "D5"));
-        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, CRUNCH), MovesetRating.of("C5", "A1"));
+        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, FIRE_BLAST), MovesetRating.of("D6", "C3"));
         TYRANITAR.movesetRanks.put(Moveset.of(BITE, CRUNCH), MovesetRating.of("A2", "C4"));
+        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, CRUNCH), MovesetRating.of("C5", "A1"));
+        TYRANITAR.movesetRanks.put(Moveset.of(IRON_TAIL, STONE_EDGE), MovesetRating.of("C4", "B2"));
         TYRANITAR.movesetRanks.put(Moveset.of(BITE, FIRE_BLAST), MovesetRating.of("C3", "D6"));
         TYRANITAR.movesetRanks = Collections.unmodifiableMap(TYRANITAR.movesetRanks);
 
